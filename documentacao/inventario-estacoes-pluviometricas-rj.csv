@@ -1,0 +1,387 @@
+﻿rede,codigo,nome,municipio,latitude,longitude,fonte,id_interno,status_feed,acumulado_24h_mm,atualizado_feed_utc
+Alerta Rio,10,MADUREIRA,Rio de Janeiro,-22.87333,-43.33889,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,11,IRAJÁ,Rio de Janeiro,-22.82694,-43.33694,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,12,BANGU,Rio de Janeiro,-22.88028,-43.46583,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,13,PIEDADE,Rio de Janeiro,-22.89306,-43.31005,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,14,JACAREPAGUÁ / TANQUE,Rio de Janeiro,-22.9125,-43.36472,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,15,SAÚDE,Rio de Janeiro,-22.89806,-43.18786,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,16,JARDIM BOTÂNICO,Rio de Janeiro,-22.97278,-43.22389,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,17,BARRA / BARRINHA,Rio de Janeiro,-23.00849,-43.29965,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,18,JACAREPAGUÁ / CIDADE DE DEUS,Rio de Janeiro,-22.94556,-43.36278,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,19,BARRA / RIO CENTRO,Rio de Janeiro,-22.97721,-43.39155,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,20,GUARATIBA,Rio de Janeiro,-23.05028,-43.59472,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,21,ESTR. GRAJAÚ / JACAREPAGUA,Rio de Janeiro,-22.92556,-43.31583,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,22,SANTA CRUZ,Rio de Janeiro,-22.90944,-43.68444,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,23,GRANDE MÉIER,Rio de Janeiro,-22.89056,-43.27806,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,24,ANCHIETA,Rio de Janeiro,-22.82694,-43.40333,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,25,GROTA FUNDA,Rio de Janeiro,-23.01444,-43.52139,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,26,CAMPO GRANDE,Rio de Janeiro,-22.90361,-43.56194,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,27,SEPETIBA,Rio de Janeiro,-22.96889,-43.71167,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,28,ALTO DA BOA VISTA,Rio de Janeiro,-22.96583,-43.27833,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,29,AV. BRASIL / MENDANHA,Rio de Janeiro,-22.85694,-43.54111,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,30,RECREIO DOS BANDEIRANTES,Rio de Janeiro,-23.01,-43.44056,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,31,LARANJEIRAS,Rio de Janeiro,-22.94056,-43.1875,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,32,SÃO CRISTÓVÃO,Rio de Janeiro,-22.89667,-43.22167,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,33,TIJUCA / MUDA,Rio de Janeiro,-22.93278,-43.24333,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,01,VIDIGAL,Rio de Janeiro,-22.9925,-43.23306,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,02,URCA,Rio de Janeiro,-22.95583,-43.16667,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,03,ROCINHA,Rio de Janeiro,-22.98583,-43.245,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,04,TIJUCA,Rio de Janeiro,-22.93194,-43.22167,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,05,SANTA TERESA,Rio de Janeiro,-22.93167,-43.19639,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,06,COPACABANA,Rio de Janeiro,-22.98639,-43.18944,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,07,GRAJAÚ,Rio de Janeiro,-22.92222,-43.2675,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,08,ILHA DO GOVERNADOR,Rio de Janeiro,-22.81806,-43.21028,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Alerta Rio,09,PENHA,Rio de Janeiro,-22.84444,-43.27528,https://www.sistema-alerta-rio.com.br/wp-content/uploads/2016/07/RELATORIO_ANUAL_CHUVA_2023.pdf,,,,
+Cemaden,330455703A,Abolição,RIO DE JANEIRO,-22.88591,-43.29775,https://resources.cemaden.gov.br/dados/311_24.json,3042,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455705A,Tanque Jacarepagua,RIO DE JANEIRO,-22.918,-43.361,https://resources.cemaden.gov.br/dados/311_24.json,3043,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455706A,Penha,RIO DE JANEIRO,-22.839,-43.279,https://resources.cemaden.gov.br/dados/311_24.json,3044,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455704A,Praça Seca,RIO DE JANEIRO,-22.896,-43.352,https://resources.cemaden.gov.br/dados/311_24.json,3045,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455701A,Glória,RIO DE JANEIRO,-22.915,-43.176,https://resources.cemaden.gov.br/dados/311_24.json,3114,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455709A,Est. Pedra Bonita,RIO DE JANEIRO,-22.97786,-43.27744,https://resources.cemaden.gov.br/dados/311_24.json,3215,0,,2026-11-15 11:04:41 UTC
+Cemaden,330050601A,São Miguel,BOM JARDIM,-22.164,-42.418,https://resources.cemaden.gov.br/dados/311_24.json,3262,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330050602A,São José do Ribeirão,BOM JARDIM,-22.205,-42.396,https://resources.cemaden.gov.br/dados/311_24.json,3263,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330050603A,EMATER,BOM JARDIM,-22.156,-42.419,https://resources.cemaden.gov.br/dados/311_24.json,3264,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330050604A,Centro,BOM JARDIM,-22.15,-42.422,https://resources.cemaden.gov.br/dados/311_24.json,3265,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330080302A,Centro,CACHOEIRAS DE MACACU,-22.463,-42.654,https://resources.cemaden.gov.br/dados/311_24.json,3266,0,,2026-11-15 11:04:41 UTC
+Cemaden,330080304A,Japiúba,CACHOEIRAS DE MACACU,-22.562,-42.686,https://resources.cemaden.gov.br/dados/311_24.json,3268,0,,2026-11-15 11:04:41 UTC
+Cemaden,330095101A,Bairro Reta,COMENDADOR LEVY GASPARIAN,-22.053,-43.207,https://resources.cemaden.gov.br/dados/311_24.json,3269,0,,2026-11-15 11:04:41 UTC
+Cemaden,330160301A,EMATER,DUAS BARRAS,-22.051,-42.522,https://resources.cemaden.gov.br/dados/311_24.json,3271,0,0.4,2026-11-15 11:04:41 UTC
+Cemaden,330245201A,Bairro Reta,MACUCO,-21.989,-42.259,https://resources.cemaden.gov.br/dados/311_24.json,3272,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340102A,Vale dos Pinheiros,NOVA FRIBURGO,-22.29,-42.548,https://resources.cemaden.gov.br/dados/311_24.json,3273,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330340103A,Mury,NOVA FRIBURGO,-22.34,-42.513,https://resources.cemaden.gov.br/dados/311_24.json,3274,0,0.6,2026-11-15 11:04:41 UTC
+Cemaden,330340104A,São Geraldo,NOVA FRIBURGO,-22.239,-42.547,https://resources.cemaden.gov.br/dados/311_24.json,3275,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330340105A,Olaria,NOVA FRIBURGO,-22.308,-42.542,https://resources.cemaden.gov.br/dados/311_24.json,3276,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330340106A,Vila Nova,NOVA FRIBURGO,-22.269,-42.534,https://resources.cemaden.gov.br/dados/311_24.json,3277,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330340107A,Amparo,NOVA FRIBURGO,-22.258,-42.459,https://resources.cemaden.gov.br/dados/311_24.json,3278,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340108A,Lumiar,NOVA FRIBURGO,-22.348,-42.327,https://resources.cemaden.gov.br/dados/311_24.json,3279,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340109A,Ponte da Saudade,NOVA FRIBURGO,-22.31,-42.524,https://resources.cemaden.gov.br/dados/311_24.json,3280,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340110A,Cardinot,NOVA FRIBURGO,-22.297,-42.588,https://resources.cemaden.gov.br/dados/311_24.json,3284,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340111A,Rio Grandina,NOVA FRIBURGO,-22.197,-42.511,https://resources.cemaden.gov.br/dados/311_24.json,3285,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340113A,RJ116-km69,NOVA FRIBURGO,-22.361,-42.529,https://resources.cemaden.gov.br/dados/311_24.json,3287,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340114A,Varginha,NOVA FRIBURGO,-22.294,-42.505,https://resources.cemaden.gov.br/dados/311_24.json,3288,0,15.2,2026-11-15 11:04:41 UTC
+Cemaden,330340115A,Centro - NF,NOVA FRIBURGO,-22.2874,-42.53155,https://resources.cemaden.gov.br/dados/311_24.json,3289,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330340116A,Maria Teresa,NOVA FRIBURGO,-22.21282,-42.51351,https://resources.cemaden.gov.br/dados/311_24.json,3290,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340117A,Conquista,NOVA FRIBURGO,-22.23988,-42.64793,https://resources.cemaden.gov.br/dados/311_24.json,3291,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340118A,Granja Spinelli,NOVA FRIBURGO,-22.279,-42.56,https://resources.cemaden.gov.br/dados/311_24.json,3292,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340119A,São Pedro da Serra,NOVA FRIBURGO,-22.318,-42.331,https://resources.cemaden.gov.br/dados/311_24.json,3293,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330340120A,Jardim Califórnia,NOVA FRIBURGO,-22.239,-42.536,https://resources.cemaden.gov.br/dados/311_24.json,3294,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340121A,Caledônia,NOVA FRIBURGO,-22.335,-42.564,https://resources.cemaden.gov.br/dados/311_24.json,3295,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330340122A,Caledônia2,NOVA FRIBURGO,-22.359,-42.56,https://resources.cemaden.gov.br/dados/311_24.json,3296,0,4.6,2026-11-15 11:04:41 UTC
+Cemaden,330340123A,Perissê,NOVA FRIBURGO,-22.293,-42.533,https://resources.cemaden.gov.br/dados/311_24.json,3297,0,,2026-11-15 11:04:41 UTC
+Cemaden,330340124A,Nova Suiça,NOVA FRIBURGO,-22.279,-42.498,https://resources.cemaden.gov.br/dados/311_24.json,3298,0,,2026-11-15 11:04:41 UTC
+Cemaden,330370801A,Jatobá,PARAÍBA DO SUL,-22.172,-43.296,https://resources.cemaden.gov.br/dados/311_24.json,3300,0,,2026-11-15 11:04:41 UTC
+Cemaden,330370802A,Werneck,PARAÍBA DO SUL,-22.216,-43.316,https://resources.cemaden.gov.br/dados/311_24.json,3301,0,,2026-11-15 11:04:41 UTC
+Cemaden,330390602A,Alto da Serra,PETRÓPOLIS,-22.53,-43.171,https://resources.cemaden.gov.br/dados/311_24.json,3303,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330390605A,Araras,PETRÓPOLIS,-22.427,-43.249,https://resources.cemaden.gov.br/dados/311_24.json,3306,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330390606A,Estrada do Cantagalo,PETRÓPOLIS,-22.374,-43.046,https://resources.cemaden.gov.br/dados/311_24.json,3307,0,,2026-11-15 11:04:41 UTC
+Cemaden,330390607A,Estrada do Brejal,PETRÓPOLIS,-22.255,-43.063,https://resources.cemaden.gov.br/dados/311_24.json,3308,0,,2026-11-15 11:04:41 UTC
+Cemaden,330390609A,Vila Constância,PETRÓPOLIS,-22.401,-43.097,https://resources.cemaden.gov.br/dados/311_24.json,3310,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330390611A,Itaipava,PETRÓPOLIS,-22.388,-43.132,https://resources.cemaden.gov.br/dados/311_24.json,3312,0,0.4,2026-11-15 11:04:41 UTC
+Cemaden,330390612A,Independência2,PETRÓPOLIS,-22.548,-43.209,https://resources.cemaden.gov.br/dados/311_24.json,3313,0,1.99,2026-11-15 11:04:41 UTC
+Cemaden,330390613A,CIEP Brizolão 281,PETRÓPOLIS,-22.258,-43.076,https://resources.cemaden.gov.br/dados/311_24.json,3314,0,,2026-11-15 11:04:41 UTC
+Cemaden,330390614A,CIEP Brizolão137,PETRÓPOLIS,-22.454,-43.143,https://resources.cemaden.gov.br/dados/311_24.json,3315,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330390615A,Vale do Cuiabá,PETRÓPOLIS,-22.402,-43.047,https://resources.cemaden.gov.br/dados/311_24.json,3316,0,,2026-11-15 11:04:41 UTC
+Cemaden,330390617A,Rua Araruama/Quitandinha,PETRÓPOLIS,-22.52,-43.22,https://resources.cemaden.gov.br/dados/311_24.json,3318,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330390618A,Rua Amazonas/Quitandinha,PETRÓPOLIS,-22.529,-43.223,https://resources.cemaden.gov.br/dados/311_24.json,3319,0,,2026-11-15 11:04:41 UTC
+Cemaden,330390619A,Nogueira,PETRÓPOLIS,-22.418,-43.122,https://resources.cemaden.gov.br/dados/311_24.json,3320,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330390620A,Morin,PETRÓPOLIS,-22.527,-43.161,https://resources.cemaden.gov.br/dados/311_24.json,3321,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330390622A,Itaipava2,PETRÓPOLIS,-22.369,-43.112,https://resources.cemaden.gov.br/dados/311_24.json,3323,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330390623A,Pedro do Rio,PETRÓPOLIS,-22.335,-43.134,https://resources.cemaden.gov.br/dados/311_24.json,3324,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330390624A,Estrada da Cachoeira,PETRÓPOLIS,-22.353,-43.095,https://resources.cemaden.gov.br/dados/311_24.json,3325,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330390626A,Vale do Cuiabá2,PETRÓPOLIS,-22.336,-43.047,https://resources.cemaden.gov.br/dados/311_24.json,3327,0,,2026-11-15 11:04:41 UTC
+Cemaden,330460703A,Arranchadouro,SANTA MARIA MADALENA,-21.968,-42.003,https://resources.cemaden.gov.br/dados/311_24.json,3330,0,0.8,2026-11-15 11:04:41 UTC
+Cemaden,330460704A,Morro das Torres,SANTA MARIA MADALENA,-21.968,-42.017,https://resources.cemaden.gov.br/dados/311_24.json,3331,0,,2026-11-15 11:04:41 UTC
+Cemaden,330515801A,Centro,SÃO JOSÉ DO VALE DO RIO PRETO,-22.1989,-43.0181,https://resources.cemaden.gov.br/dados/311_24.json,3332,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330530702A,Centro,SÃO SEBASTIÃO DO ALTO,-21.955,-42.134,https://resources.cemaden.gov.br/dados/311_24.json,3334,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330580203A,Meudon,TERESÓPOLIS,-22.436,-42.943,https://resources.cemaden.gov.br/dados/311_24.json,3337,0,,2026-11-15 11:04:41 UTC
+Cemaden,330580204A,São Pedro ,TERESÓPOLIS,-22.428,-42.962,https://resources.cemaden.gov.br/dados/311_24.json,3338,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330580205A,Fonte Santa,TERESÓPOLIS,-22.4,-42.955,https://resources.cemaden.gov.br/dados/311_24.json,3339,0,,2026-11-15 11:04:41 UTC
+Cemaden,330580208A,Panorama,TERESÓPOLIS,-22.418,-42.981,https://resources.cemaden.gov.br/dados/311_24.json,3341,0,,2026-11-15 11:04:41 UTC
+Cemaden,330580209A,Vieira,TERESÓPOLIS,-22.262,-42.737,https://resources.cemaden.gov.br/dados/311_24.json,3342,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330580212A,Fazenda Alpina,TERESÓPOLIS,-22.338,-42.98,https://resources.cemaden.gov.br/dados/311_24.json,3345,0,,2026-11-15 11:04:41 UTC
+Cemaden,330580213A,Morro dos Pinheiros,TERESÓPOLIS,-22.417,-42.966,https://resources.cemaden.gov.br/dados/311_24.json,3346,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330580214A,Parque do Imbui,TERESÓPOLIS,-22.39,-42.998,https://resources.cemaden.gov.br/dados/311_24.json,3347,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330580215A,Venda Nova,TERESÓPOLIS,-22.32,-42.87,https://resources.cemaden.gov.br/dados/311_24.json,3348,0,,2026-11-15 11:04:41 UTC
+Cemaden,330580216A,Vieira2,TERESÓPOLIS,-22.282,-42.723,https://resources.cemaden.gov.br/dados/311_24.json,3349,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330580217A,Tres Corregos,TERESÓPOLIS,-22.353,-42.944,https://resources.cemaden.gov.br/dados/311_24.json,3350,0,6.8,2026-11-15 11:04:41 UTC
+Cemaden,330580219A,Bonsucesso,TERESÓPOLIS,-22.275,-42.796,https://resources.cemaden.gov.br/dados/311_24.json,3351,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330580220A,Vargem Grande,TERESÓPOLIS,-22.374,-42.872,https://resources.cemaden.gov.br/dados/311_24.json,3352,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330590102A,Avenida Amaral Teixeira,TRAJANO DE MORAES,-22.079,-42.07,https://resources.cemaden.gov.br/dados/311_24.json,3356,0,5.9,2026-11-15 11:04:41 UTC
+Cemaden,330590104A,Sede Defesa Civil,TRAJANO DE MORAES,-22.064,-42.068,https://resources.cemaden.gov.br/dados/311_24.json,3358,0,2.96,2026-11-15 11:04:41 UTC
+Cemaden,330600801A,Centro,TRÊS RIOS,-22.113,-43.204,https://resources.cemaden.gov.br/dados/311_24.json,3359,0,,2026-11-15 11:04:41 UTC
+Cemaden,330600802A,Purys,TRÊS RIOS,-22.098,-43.209,https://resources.cemaden.gov.br/dados/311_24.json,3360,0,,2026-11-15 11:04:41 UTC
+Cemaden,330600803A,Vila Isabel,TRÊS RIOS,-22.107,-43.192,https://resources.cemaden.gov.br/dados/311_24.json,3361,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330600804A,Moura Brasil,TRÊS RIOS,-22.131,-43.149,https://resources.cemaden.gov.br/dados/311_24.json,3362,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330600805A,Vila Isabel2,TRÊS RIOS,-22.106,-43.182,https://resources.cemaden.gov.br/dados/311_24.json,3363,0,,2026-11-15 11:04:41 UTC
+Cemaden,330600806A,SAAETRI,TRÊS RIOS,-22.129,-43.243,https://resources.cemaden.gov.br/dados/311_24.json,3364,0,,2026-11-15 11:04:41 UTC
+Cemaden,330600807A,Mirante Sul,TRÊS RIOS,-22.101,-43.219,https://resources.cemaden.gov.br/dados/311_24.json,3365,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330110801A,Felipe João,CANTAGALO,-21.981,-42.365,https://resources.cemaden.gov.br/dados/311_24.json,3370,0,0.79,2026-11-15 11:04:41 UTC
+Cemaden,330150401A,Retiro Poético,CORDEIRO,-22.034,-42.383,https://resources.cemaden.gov.br/dados/311_24.json,3372,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330150402A,Centro,CORDEIRO,-22.02632,-42.35958,https://resources.cemaden.gov.br/dados/311_24.json,3373,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330580218A,Est. Teresópolis/Nova Friburgo 2,TERESÓPOLIS,-22.275,-42.732,https://resources.cemaden.gov.br/dados/311_24.json,3381,0,,2026-11-15 11:04:41 UTC
+Cemaden,311205904A,Euclidelândia,CANTAGALO,-21.908,-42.261,https://resources.cemaden.gov.br/dados/311_24.json,3384,0,,2026-11-15 11:04:41 UTC
+Cemaden,330110805A,Boa sorte,CANTAGALO,-21.854,-42.274,https://resources.cemaden.gov.br/dados/311_24.json,3385,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330022502A,Centro,AREAL,-22.239,-43.102,https://resources.cemaden.gov.br/dados/311_24.json,3387,0,,2026-11-15 11:04:41 UTC
+Cemaden,330022503A,SAAESA,AREAL,-22.227,-43.092,https://resources.cemaden.gov.br/dados/311_24.json,3388,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330080305A,Valério,CACHOEIRAS DE MACACU,-22.439,-42.636,https://resources.cemaden.gov.br/dados/311_24.json,3390,0,1.0,2026-11-15 11:04:41 UTC
+Cemaden,330080306A,São Francisco de Assis,CACHOEIRAS DE MACACU,-22.474,-42.655,https://resources.cemaden.gov.br/dados/311_24.json,3391,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330080307A,Centro2,CACHOEIRAS DE MACACU,-22.561,-42.693,https://resources.cemaden.gov.br/dados/311_24.json,3392,0,,2026-11-15 11:04:41 UTC
+Cemaden,330080309A,E. M Engenheiro Elias Faraht,CACHOEIRAS DE MACACU,-22.591,-42.878,https://resources.cemaden.gov.br/dados/311_24.json,3394,0,,2026-11-15 11:04:41 UTC
+Cemaden,330095102A,SAELEG,COMENDADOR LEVY GASPARIAN,-22.031,-43.207,https://resources.cemaden.gov.br/dados/311_24.json,3395,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330120701A,Reta,CARMO,-21.94,-42.607,https://resources.cemaden.gov.br/dados/311_24.json,3396,0,,2026-11-15 11:04:41 UTC
+Cemaden,330120702A,RJ 158 km10,CARMO,-21.844,-42.579,https://resources.cemaden.gov.br/dados/311_24.json,3397,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330150403A,Jardim Alah,CORDEIRO,-22.01398,-42.36532,https://resources.cemaden.gov.br/dados/311_24.json,3398,0,,2026-11-15 11:04:41 UTC
+Cemaden,330160302A,Distrito de Monnerat,DUAS BARRAS,-22.075,-42.404,https://resources.cemaden.gov.br/dados/311_24.json,3399,0,,2026-11-15 11:04:41 UTC
+Cemaden,330370803A,Limoeiro,PARAÍBA DO SUL,-22.154,-43.288,https://resources.cemaden.gov.br/dados/311_24.json,3400,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330390627A,Mosela,PETRÓPOLIS,-22.481,-43.219,https://resources.cemaden.gov.br/dados/311_24.json,3401,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330390628A,Vila Rica,PETRÓPOLIS,-22.349,-43.132,https://resources.cemaden.gov.br/dados/311_24.json,3402,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330515802A,Águas Claras,SÃO JOSÉ DO VALE DO RIO PRETO,-22.166,-42.947,https://resources.cemaden.gov.br/dados/311_24.json,3404,0,,2026-11-15 11:04:41 UTC
+Cemaden,330515803A,Estrada do Dirindi,SÃO JOSÉ DO VALE DO RIO PRETO,-22.1478,-42.9176,https://resources.cemaden.gov.br/dados/311_24.json,3405,0,,2026-11-15 11:04:41 UTC
+Cemaden,330540601A,BR116-km14,SAPUCAIA,-21.9701,-42.74476,https://resources.cemaden.gov.br/dados/311_24.json,3406,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330540602A,Est.Santa Rita,SAPUCAIA,-22.03232,-42.79464,https://resources.cemaden.gov.br/dados/311_24.json,3407,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330540603A,Centro,SAPUCAIA,-21.99511,-42.91332,https://resources.cemaden.gov.br/dados/311_24.json,3408,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330540604A,Secretaria de Transportes,SAPUCAIA,-22.03832,-42.98933,https://resources.cemaden.gov.br/dados/311_24.json,3409,0,1.19,2026-11-15 11:04:41 UTC
+Cemaden,330010001A,Frade,ANGRA DOS REIS,-22.966,-44.44,https://resources.cemaden.gov.br/dados/311_24.json,3420,0,1.19,2026-11-15 11:04:41 UTC
+Cemaden,330010002A,Camorim,ANGRA DOS REIS,-22.998,-44.264,https://resources.cemaden.gov.br/dados/311_24.json,3421,0,9.34,2026-11-15 11:04:41 UTC
+Cemaden,330010003A,Bracuí,ANGRA DOS REIS,-22.933,-44.387,https://resources.cemaden.gov.br/dados/311_24.json,3422,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330010004A,Areal,ANGRA DOS REIS,-22.982,-44.292,https://resources.cemaden.gov.br/dados/311_24.json,3423,0,4.13,2026-11-15 11:04:41 UTC
+Cemaden,330010005A,Parque do Belém,ANGRA DOS REIS,-22.9604,-44.29408,https://resources.cemaden.gov.br/dados/311_24.json,3424,0,,2026-11-15 11:04:41 UTC
+Cemaden,330010006A,Parque Pereque,ANGRA DOS REIS,-23.014,-44.533,https://resources.cemaden.gov.br/dados/311_24.json,3425,0,1.0,2026-11-15 11:04:41 UTC
+Cemaden,330010007A,BNH,ANGRA DOS REIS,-22.992,-44.241,https://resources.cemaden.gov.br/dados/311_24.json,3426,0,0.99,2026-11-15 11:04:41 UTC
+Cemaden,330010008A,Portogalo,ANGRA DOS REIS,-23.037,-44.195,https://resources.cemaden.gov.br/dados/311_24.json,3427,0,0.6,2026-11-15 11:04:41 UTC
+Cemaden,330010009A,Vila Histórica,ANGRA DOS REIS,-23.0247,-44.51829,https://resources.cemaden.gov.br/dados/311_24.json,3428,0,0.39,2026-11-15 11:04:41 UTC
+Cemaden,330010010A,Vila Velha,ANGRA DOS REIS,-23.024,-44.349,https://resources.cemaden.gov.br/dados/311_24.json,3429,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330010011A,Praia da Chacara,ANGRA DOS REIS,-22.99993,-44.305,https://resources.cemaden.gov.br/dados/311_24.json,3430,0,2.2,2026-11-15 11:04:41 UTC
+Cemaden,330010012A,Monsuaba,ANGRA DOS REIS,-23.01,-44.222,https://resources.cemaden.gov.br/dados/311_24.json,3431,0,1.19,2026-11-15 11:04:41 UTC
+Cemaden,330010013A,Ariró,ANGRA DOS REIS,-22.902,-44.332,https://resources.cemaden.gov.br/dados/311_24.json,3432,0,2.57,2026-11-15 11:04:41 UTC
+Cemaden,330010014A,Serra d`agua,ANGRA DOS REIS,-22.889,-44.278,https://resources.cemaden.gov.br/dados/311_24.json,3433,0,6.53,2026-11-15 11:04:41 UTC
+Cemaden,330010015A,Pontal,ANGRA DOS REIS,-22.948,-44.329,https://resources.cemaden.gov.br/dados/311_24.json,3434,0,0.99,2026-11-15 11:04:41 UTC
+Cemaden,330010016A,Banqueta,ANGRA DOS REIS,-22.96894,-44.28112,https://resources.cemaden.gov.br/dados/311_24.json,3435,0,,2026-11-15 11:04:41 UTC
+Cemaden,330010017A,Enseada,ANGRA DOS REIS,-22.987,-44.32,https://resources.cemaden.gov.br/dados/311_24.json,3436,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330010018A,Camorim Pequeno,ANGRA DOS REIS,-23.005,-44.279,https://resources.cemaden.gov.br/dados/311_24.json,3437,0,,2026-11-15 11:04:41 UTC
+Cemaden,330010019A,Praia Brava,ANGRA DOS REIS,-23.005,-44.48,https://resources.cemaden.gov.br/dados/311_24.json,3438,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330010020A,Itanema,ANGRA DOS REIS,-22.923,-44.359,https://resources.cemaden.gov.br/dados/311_24.json,3439,0,5.52,2026-11-15 11:04:41 UTC
+Cemaden,330010021A,Praia de Garatucaia,ANGRA DOS REIS,-23.037,-44.177,https://resources.cemaden.gov.br/dados/311_24.json,3440,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330010023A,Mombaça,ANGRA DOS REIS,-23.017,-44.291,https://resources.cemaden.gov.br/dados/311_24.json,3442,0,0.4,2026-11-15 11:04:41 UTC
+Cemaden,330010024A,Praia de Bananal,ANGRA DOS REIS,-23.109,-44.248,https://resources.cemaden.gov.br/dados/311_24.json,3443,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330010025A,Praia Sítio Forte,ANGRA DOS REIS,-23.137,-44.282,https://resources.cemaden.gov.br/dados/311_24.json,3444,0,,2026-11-15 11:04:41 UTC
+Cemaden,330010026A,Vila do Abraão,ANGRA DOS REIS,-23.139,-44.169,https://resources.cemaden.gov.br/dados/311_24.json,3445,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330010027A,São Bento,ANGRA DOS REIS,-23.012,-44.322,https://resources.cemaden.gov.br/dados/311_24.json,3446,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330010028A,Caputera,ANGRA DOS REIS,-22.987,-44.218,https://resources.cemaden.gov.br/dados/311_24.json,3447,0,1.0,2026-11-15 11:04:41 UTC
+Cemaden,330010029A,Ponta Leste,ANGRA DOS REIS,-23.052,-44.243,https://resources.cemaden.gov.br/dados/311_24.json,3448,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330260101A,Praia do Saco,MANGARATIBA,-22.945,-44.038,https://resources.cemaden.gov.br/dados/311_24.json,3449,0,1.2,2026-11-15 11:04:41 UTC
+Cemaden,330260102A,Muriqui,MANGARATIBA,-22.919,-43.949,https://resources.cemaden.gov.br/dados/311_24.json,3450,0,3.39,2026-11-15 11:04:41 UTC
+Cemaden,330380701A,BR101 - km588,PARATY,-23.31803,-44.72261,https://resources.cemaden.gov.br/dados/311_24.json,3451,0,,2026-11-15 11:04:41 UTC
+Cemaden,330380702A,Mangueira,PARATY,-23.21509,-44.73483,https://resources.cemaden.gov.br/dados/311_24.json,3452,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330380704A,Laranjeiras,PARATY,-23.333,-44.678,https://resources.cemaden.gov.br/dados/311_24.json,3454,0,1.6,2026-11-15 11:04:41 UTC
+Cemaden,330580207A,Est.RioBahia,TERESÓPOLIS,-22.273,-42.958,https://resources.cemaden.gov.br/dados/311_24.json,3523,0,,2026-11-15 11:04:41 UTC
+Cemaden,330580225A,Serra do Capim,TERESÓPOLIS,-22.182,-42.851,https://resources.cemaden.gov.br/dados/311_24.json,3526,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330580227A,Volta do Pião,TERESÓPOLIS,-22.40342,-42.96826,https://resources.cemaden.gov.br/dados/311_24.json,3528,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330570307A,Centro,SUMIDOURO,-22.048,-42.673,https://resources.cemaden.gov.br/dados/311_24.json,3529,0,1.8,2026-11-15 11:04:41 UTC
+Cemaden,330170201A,Pilar,DUQUE DE CAXIAS,-22.701,-43.292,https://resources.cemaden.gov.br/dados/311_24.json,3530,0,,2026-11-15 11:04:41 UTC
+Cemaden,330170205A,Xerem,DUQUE DE CAXIAS,-22.549,-43.302,https://resources.cemaden.gov.br/dados/311_24.json,3531,0,,2026-11-15 11:04:41 UTC
+Cemaden,330170207A,Xerem3,DUQUE DE CAXIAS,-22.572,-43.313,https://resources.cemaden.gov.br/dados/311_24.json,3532,0,,2026-11-15 11:04:41 UTC
+Cemaden,330330202A,Praia João Caetano,NITERÓI,-22.905,-43.121,https://resources.cemaden.gov.br/dados/311_24.json,3534,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330330203A,Largo da Batalha,NITERÓI,-22.907,-43.067,https://resources.cemaden.gov.br/dados/311_24.json,3535,0,1.6,2026-11-15 11:04:41 UTC
+Cemaden,330330204A,Morro do Castro,NITERÓI,-22.869,-43.07,https://resources.cemaden.gov.br/dados/311_24.json,3536,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330330205A,Barreto,NITERÓI,-22.862,-43.099,https://resources.cemaden.gov.br/dados/311_24.json,3537,0,,2026-11-15 11:04:41 UTC
+Cemaden,330330207A,Maria Paula,NITERÓI,-22.881,-43.03,https://resources.cemaden.gov.br/dados/311_24.json,3538,0,,2026-11-15 11:04:41 UTC
+Cemaden,330330212A,Piratininga,NITERÓI,-22.942,-43.057,https://resources.cemaden.gov.br/dados/311_24.json,3539,0,,2026-11-15 11:04:41 UTC
+Cemaden,330330213A,Charitas,NITERÓI,-22.934,-43.098,https://resources.cemaden.gov.br/dados/311_24.json,3540,0,0.4,2026-11-15 11:04:41 UTC
+Cemaden,330330215A,Piratininga2,NITERÓI,-22.951,-43.092,https://resources.cemaden.gov.br/dados/311_24.json,3541,0,,2026-11-15 11:04:41 UTC
+Cemaden,330330216A,Fonseca,NITERÓI,-22.883,-43.083,https://resources.cemaden.gov.br/dados/311_24.json,3542,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330490402A,Pita,SÃO GONÇALO,-22.848,-43.07,https://resources.cemaden.gov.br/dados/311_24.json,3543,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330490406A,Mutuaguaçu,SÃO GONÇALO,-22.807,-43.041,https://resources.cemaden.gov.br/dados/311_24.json,3544,0,,2026-11-15 11:04:41 UTC
+Cemaden,330490412A,Arsenal,SÃO GONÇALO,-22.862,-43.005,https://resources.cemaden.gov.br/dados/311_24.json,3547,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330190002A,Vale do Sol,ITABORAÍ,-22.761,-42.904,https://resources.cemaden.gov.br/dados/311_24.json,3557,0,,2026-11-15 11:04:41 UTC
+Cemaden,330190006A,Nova Cidade,ITABORAÍ,-22.755,-42.847,https://resources.cemaden.gov.br/dados/311_24.json,3560,0,,2026-11-15 11:04:41 UTC
+Cemaden,330250203A,Fragoso,MAGÉ,-22.594,-43.183,https://resources.cemaden.gov.br/dados/311_24.json,3561,0,,2026-11-15 11:04:41 UTC
+Cemaden,330250205A,Maua,MAGÉ,-22.709,-43.166,https://resources.cemaden.gov.br/dados/311_24.json,3562,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330250211A,Rio dos Cavaleiros,MAGÉ,-22.598,-43.118,https://resources.cemaden.gov.br/dados/311_24.json,3563,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330330210A,Várzea das Moças,NITERÓI,-22.908,-42.985,https://resources.cemaden.gov.br/dados/311_24.json,3564,0,,2026-11-15 11:04:41 UTC
+Cemaden,330190007A,Apolo II,ITABORAÍ,-22.776,-42.938,https://resources.cemaden.gov.br/dados/311_24.json,3581,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330270003A,Ponta Negra,MARICÁ,-22.951,-42.697,https://resources.cemaden.gov.br/dados/311_24.json,3582,0,,2026-11-15 11:04:41 UTC
+Cemaden,330490408A,Vista Alegre,SÃO GONÇALO,-22.808,-42.964,https://resources.cemaden.gov.br/dados/311_24.json,3583,0,,2026-11-15 11:04:41 UTC
+Cemaden,330575202A,CEDAE,TANGUÁ,-22.725,-42.727,https://resources.cemaden.gov.br/dados/311_24.json,3585,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330170203A,Sarapui,DUQUE DE CAXIAS,-22.749,-43.299,https://resources.cemaden.gov.br/dados/311_24.json,3636,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330170210A,Taquara,DUQUE DE CAXIAS,-22.621,-43.235,https://resources.cemaden.gov.br/dados/311_24.json,3678,0,,2026-11-15 11:04:41 UTC
+Cemaden,330170214A,Jardim Olavo Bilac,DUQUE DE CAXIAS,-22.775,-43.327,https://resources.cemaden.gov.br/dados/311_24.json,3679,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330170211A,São Judas Tadeu,DUQUE DE CAXIAS,-22.661,-43.285,https://resources.cemaden.gov.br/dados/311_24.json,3680,0,,2026-11-15 11:04:41 UTC
+Cemaden,330045601A,Santa Amélia,BELFORD ROXO,-22.742,-43.392,https://resources.cemaden.gov.br/dados/311_24.json,3684,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330045602A,Parque Amorim,BELFORD ROXO,-22.707,-43.334,https://resources.cemaden.gov.br/dados/311_24.json,3685,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330045603A,Nova Aurora,BELFORD ROXO,-22.721,-43.398,https://resources.cemaden.gov.br/dados/311_24.json,3686,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330170202A,Cidade dos Meninos,DUQUE DE CAXIAS,-22.705,-43.312,https://resources.cemaden.gov.br/dados/311_24.json,3687,0,,2026-11-15 11:04:41 UTC
+Cemaden,330170206A,Xerem2,DUQUE DE CAXIAS,-22.596,-43.299,https://resources.cemaden.gov.br/dados/311_24.json,3689,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330170208A,Jardim Mariana,DUQUE DE CAXIAS,-22.684,-43.355,https://resources.cemaden.gov.br/dados/311_24.json,3690,0,,2026-11-15 11:04:41 UTC
+Cemaden,330170209A,Jardim Anhanga,DUQUE DE CAXIAS,-22.648,-43.246,https://resources.cemaden.gov.br/dados/311_24.json,3691,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330170213A,Santa Cruz da Serra,DUQUE DE CAXIAS,-22.642,-43.282,https://resources.cemaden.gov.br/dados/311_24.json,3692,0,,2026-11-15 11:04:41 UTC
+Cemaden,330185001A,Centro,GUAPIMIRIM,-22.528,-42.984,https://resources.cemaden.gov.br/dados/311_24.json,3693,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330185002A,Barrinha,GUAPIMIRIM,-22.509,-42.983,https://resources.cemaden.gov.br/dados/311_24.json,3694,0,,2026-11-15 11:04:41 UTC
+Cemaden,330185003A,Rua Hilton de Araujo,GUAPIMIRIM,-22.596,-43.007,https://resources.cemaden.gov.br/dados/311_24.json,3695,0,,2026-11-15 11:04:41 UTC
+Cemaden,330185004A,Vale das Pedrinhas,GUAPIMIRIM,-22.655,-42.993,https://resources.cemaden.gov.br/dados/311_24.json,3696,0,,2026-11-15 11:04:41 UTC
+Cemaden,330185006A,Rod. Rio Teresópolis,GUAPIMIRIM,-22.482,-42.996,https://resources.cemaden.gov.br/dados/311_24.json,3698,0,,2026-11-15 11:04:41 UTC
+Cemaden,330190001A,Sambaetiba,ITABORAÍ,-22.681,-42.78,https://resources.cemaden.gov.br/dados/311_24.json,3699,0,,2026-11-15 11:04:41 UTC
+Cemaden,330190005A,Visconde de Itaboraí,ITABORAÍ,-22.712,-42.899,https://resources.cemaden.gov.br/dados/311_24.json,3700,0,,2026-11-15 11:04:41 UTC
+Cemaden,330227001A,Estrada Ary Schivo,JAPERI,-22.64,-43.65,https://resources.cemaden.gov.br/dados/311_24.json,3702,0,,2026-11-15 11:04:41 UTC
+Cemaden,330227002A,Centro,JAPERI,-22.675,-43.605,https://resources.cemaden.gov.br/dados/311_24.json,3703,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330250201A,Pau Grande,MAGÉ,-22.586,-43.166,https://resources.cemaden.gov.br/dados/311_24.json,3705,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330250202A,Vila Inhomitim,MAGÉ,-22.576,-43.188,https://resources.cemaden.gov.br/dados/311_24.json,3706,0,,2026-11-15 11:04:41 UTC
+Cemaden,330250204A,Jardim Nazareno,MAGÉ,-22.602,-43.19,https://resources.cemaden.gov.br/dados/311_24.json,3707,0,,2026-11-15 11:04:41 UTC
+Cemaden,330250206A,Vila Nova,MAGÉ,-22.667,-43.134,https://resources.cemaden.gov.br/dados/311_24.json,3708,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330250207A,Surui,MAGÉ,-22.664,-43.12,https://resources.cemaden.gov.br/dados/311_24.json,3709,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330250208A,Santo Aleixo,MAGÉ,-22.562,-43.052,https://resources.cemaden.gov.br/dados/311_24.json,3710,0,,2026-11-15 11:04:41 UTC
+Cemaden,330250209A,Centro,MAGÉ,-22.656,-43.037,https://resources.cemaden.gov.br/dados/311_24.json,3711,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330270001A,Itapeba,MARICÁ,-22.906,-42.815,https://resources.cemaden.gov.br/dados/311_24.json,3713,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330270002A,Itaipuaçu3,MARICÁ,-22.96425,-42.9691,https://resources.cemaden.gov.br/dados/311_24.json,3714,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330270004A,Guaratiba,MARICÁ,-22.957,-42.793,https://resources.cemaden.gov.br/dados/311_24.json,3715,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330270005A,Itaipuaçu,MARICÁ,-22.971,-42.927,https://resources.cemaden.gov.br/dados/311_24.json,3716,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330270006A,Itaipuaçu2,MARICÁ,-22.966,-43.01,https://resources.cemaden.gov.br/dados/311_24.json,3717,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330270007A,Inoá,MARICÁ,-22.898,-42.94,https://resources.cemaden.gov.br/dados/311_24.json,3718,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330270008A,Espraiado,MARICÁ,-22.889,-42.71,https://resources.cemaden.gov.br/dados/311_24.json,3719,0,1.77,2026-11-15 11:04:41 UTC
+Cemaden,330285801A,Centro,MESQUITA,-22.783,-43.427,https://resources.cemaden.gov.br/dados/311_24.json,3720,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330330201A,Visconde de Itaboraí,NITERÓI,-22.882,-43.123,https://resources.cemaden.gov.br/dados/311_24.json,3722,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330330206A,Santa Barbara,NITERÓI,-22.877,-43.049,https://resources.cemaden.gov.br/dados/311_24.json,3723,0,,2026-11-15 11:04:41 UTC
+Cemaden,330330209A,Badu,NITERÓI,-22.906,-43.053,https://resources.cemaden.gov.br/dados/311_24.json,3725,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330330211A,Jurujuba,NITERÓI,-22.932,-43.116,https://resources.cemaden.gov.br/dados/311_24.json,3726,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330330214A,Piratininga 1,NITERÓI,-22.929,-43.064,https://resources.cemaden.gov.br/dados/311_24.json,3727,0,0.6,2026-11-15 11:04:41 UTC
+Cemaden,330350001A,Riachão,NOVA IGUAÇU,-22.748,-43.499,https://resources.cemaden.gov.br/dados/311_24.json,3728,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330350002A,Caioaba,NOVA IGUAÇU,-22.734,-43.437,https://resources.cemaden.gov.br/dados/311_24.json,3729,0,,2026-11-15 11:04:41 UTC
+Cemaden,330350003A,Miguel Couto,NOVA IGUAÇU,-22.702,-43.431,https://resources.cemaden.gov.br/dados/311_24.json,3730,0,0.4,2026-11-15 11:04:41 UTC
+Cemaden,330350004A,Jardim Guandu,NOVA IGUAÇU,-22.828,-43.608,https://resources.cemaden.gov.br/dados/311_24.json,3731,0,,2026-11-15 11:04:41 UTC
+Cemaden,330350006A,Palhada,NOVA IGUAÇU,-22.765,-43.523,https://resources.cemaden.gov.br/dados/311_24.json,3733,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330350007A,Jardim Ocidental,NOVA IGUAÇU,-22.709,-43.455,https://resources.cemaden.gov.br/dados/311_24.json,3734,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330414401A,Estrada Rio do Ouro,QUEIMADOS,-22.698,-43.556,https://resources.cemaden.gov.br/dados/311_24.json,3735,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330414403A,Jardim da Fonte,QUEIMADOS,-22.712,-43.583,https://resources.cemaden.gov.br/dados/311_24.json,3737,0,,2026-11-15 11:04:41 UTC
+Cemaden,330414404A,Santa Catarina,QUEIMADOS,-22.724,-43.556,https://resources.cemaden.gov.br/dados/311_24.json,3738,0,,2026-11-15 11:04:41 UTC
+Cemaden,330490403A,Vila Três,SÃO GONÇALO,-22.818,-42.996,https://resources.cemaden.gov.br/dados/311_24.json,3740,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330490407A,Fazenda dos Mineiros,SÃO GONÇALO,-22.78801,-43.02721,https://resources.cemaden.gov.br/dados/311_24.json,3743,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330510901A,Vila Tiradentes,SÃO JOÃO DE MERITI,-22.798,-43.383,https://resources.cemaden.gov.br/dados/311_24.json,3744,0,,2026-11-15 11:04:41 UTC
+Cemaden,330510902A,Jardim Metrópole,SÃO JOÃO DE MERITI,-22.763,-43.33,https://resources.cemaden.gov.br/dados/311_24.json,3745,0,,2026-11-15 11:04:41 UTC
+Cemaden,330555401A,Dom Bosco,SEROPÉDICA,-22.806,-43.637,https://resources.cemaden.gov.br/dados/311_24.json,3748,0,,2026-11-15 11:04:41 UTC
+Cemaden,330555402A,Santa Sofia,SEROPÉDICA,-22.721,-43.731,https://resources.cemaden.gov.br/dados/311_24.json,3749,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330555403A,Centro,SEROPÉDICA,-22.748,-43.7,https://resources.cemaden.gov.br/dados/311_24.json,3750,0,,2026-11-15 11:04:41 UTC
+Cemaden,330575201A,Centro,TANGUÁ,-22.736,-42.733,https://resources.cemaden.gov.br/dados/311_24.json,3751,0,0.79,2026-11-15 11:04:41 UTC
+Cemaden,330020901A,Bananeiras,ARARUAMA,-22.8675,-42.2826,https://resources.cemaden.gov.br/dados/311_24.json,7521,0,,2026-11-15 11:04:41 UTC
+Cemaden,330020902A,Mataruna,ARARUAMA,-22.8596,-42.3412,https://resources.cemaden.gov.br/dados/311_24.json,7522,0,,2026-11-15 11:04:41 UTC
+Cemaden,330020903A,Aurora,ARARUAMA,-22.8028,-42.4162,https://resources.cemaden.gov.br/dados/311_24.json,7523,0,,2026-11-15 11:04:41 UTC
+Cemaden,330020904A,Monteiros,ARARUAMA,-22.7444,-42.2596,https://resources.cemaden.gov.br/dados/311_24.json,7524,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330030801A,Defesa Civil,BARRA DO PIRAÍ,-22.45505,-43.837,https://resources.cemaden.gov.br/dados/311_24.json,7525,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330030803A,BARRA DO PIRAÍ,BARRA DO PIRAÍ,-22.5222,-43.8035,https://resources.cemaden.gov.br/dados/311_24.json,7527,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330045604A,Parque Fluminense,BELFORD ROXO,-22.73,-43.331,https://resources.cemaden.gov.br/dados/311_24.json,7533,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330045605A,Vila Pauline,BELFORD ROXO,-22.738,-43.366,https://resources.cemaden.gov.br/dados/311_24.json,7534,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330045606A,Santa Emilia,BELFORD ROXO,-22.71599,-43.35249,https://resources.cemaden.gov.br/dados/311_24.json,7535,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330045607A,Vila Santa Rita,BELFORD ROXO,-22.74901,-43.42256,https://resources.cemaden.gov.br/dados/311_24.json,7536,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330070402A,Centro,CABO FRIO,-22.8771,-42.014,https://resources.cemaden.gov.br/dados/311_24.json,7538,0,,2026-11-15 11:04:41 UTC
+Cemaden,330070404A,Aquarius,CABO FRIO,-22.5941,-42.0012,https://resources.cemaden.gov.br/dados/311_24.json,7540,0,,2026-11-15 11:04:41 UTC
+Cemaden,330100902A,Arraial,CAMPOS DOS GOYTACAZES,-21.6025,-41.314,https://resources.cemaden.gov.br/dados/311_24.json,7542,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330100903A,Morro do Coco,CAMPOS DOS GOYTACAZES,-21.3759,-41.3465,https://resources.cemaden.gov.br/dados/311_24.json,7543,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330100904A,Dores de Macabu,CAMPOS DOS GOYTACAZES,-21.9896,-41.5073,https://resources.cemaden.gov.br/dados/311_24.json,7544,0,,2026-11-15 11:04:41 UTC
+Cemaden,330100905A,Jardim Carioca,CAMPOS DOS GOYTACAZES,-21.7469,-41.3186,https://resources.cemaden.gov.br/dados/311_24.json,7545,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330100906A,Serrinha,CAMPOS DOS GOYTACAZES,-22.0208,-41.6853,https://resources.cemaden.gov.br/dados/311_24.json,7546,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330190008A,São José,ITABORAÍ,-22.837,-42.882,https://resources.cemaden.gov.br/dados/311_24.json,7549,0,,2026-11-15 11:04:41 UTC
+Cemaden,330200702A,Engenho,ITAGUAÍ,-22.8654,-43.7537,https://resources.cemaden.gov.br/dados/311_24.json,7550,0,,2026-11-15 11:04:41 UTC
+Cemaden,330200703A,Santa Candida,ITAGUAÍ,-22.848,-43.82,https://resources.cemaden.gov.br/dados/311_24.json,7551,0,,2026-11-15 11:04:41 UTC
+Cemaden,330200704A,Ilha da Madeira,ITAGUAÍ,-22.9213,-43.8504,https://resources.cemaden.gov.br/dados/311_24.json,7552,0,1.6,2026-11-15 11:04:41 UTC
+Cemaden,330225401A,Centro,ITATIAIA,-22.4913,-44.5636,https://resources.cemaden.gov.br/dados/311_24.json,7553,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330225403A,Maromba,ITATIAIA,-22.3385,-44.6141,https://resources.cemaden.gov.br/dados/311_24.json,7555,0,,2026-11-15 11:04:41 UTC
+Cemaden,330227004A,Parque Gandu,JAPERI,-22.69126,-43.632,https://resources.cemaden.gov.br/dados/311_24.json,7558,0,,2026-11-15 11:04:41 UTC
+Cemaden,330227005A,E.M Teofilo Cunha,JAPERI,-22.6532,-43.5963,https://resources.cemaden.gov.br/dados/311_24.json,7559,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330280901A,Centro,MENDES,-22.52687,-43.73212,https://resources.cemaden.gov.br/dados/311_24.json,7560,0,,2026-11-15 11:04:41 UTC
+Cemaden,330285802A,Jacutinga,MESQUITA,-22.7694,-43.4143,https://resources.cemaden.gov.br/dados/311_24.json,7561,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330285803A,Chatuba,MESQUITA,-22.8016,-43.4355,https://resources.cemaden.gov.br/dados/311_24.json,7562,0,,2026-11-15 11:04:41 UTC
+Cemaden,330320302A,Paiol,NILÓPOLIS,-22.8109,-43.3962,https://resources.cemaden.gov.br/dados/311_24.json,7563,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330320303A,Prefeitura Municipal,NILÓPOLIS,-22.8078,-43.4195,https://resources.cemaden.gov.br/dados/311_24.json,7564,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330350008A,Austin,NOVA IGUAÇU,-22.718,-43.523,https://resources.cemaden.gov.br/dados/311_24.json,7565,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330350009A,Adrianópolis,NOVA IGUAÇU,-22.661,-43.493,https://resources.cemaden.gov.br/dados/311_24.json,7566,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330350010A,Cobrex,NOVA IGUAÇU,-22.7232,-43.4682,https://resources.cemaden.gov.br/dados/311_24.json,7567,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330360901A,Centro,PARACAMBI,-22.5985,-43.7142,https://resources.cemaden.gov.br/dados/311_24.json,7568,0,,2026-11-15 11:04:41 UTC
+Cemaden,330395501A,Centro,PINHEIRAL,-22.5187,-44.00191,https://resources.cemaden.gov.br/dados/311_24.json,7571,0,,2026-11-15 11:04:41 UTC
+Cemaden,330400301A,Arrozal,PIRAÍ,-22.59642,-44.03474,https://resources.cemaden.gov.br/dados/311_24.json,7572,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330400302A,Morro da Cruz,PIRAÍ,-22.63015,-43.89248,https://resources.cemaden.gov.br/dados/311_24.json,7573,0,,2026-11-15 11:04:41 UTC
+Cemaden,330411001A,Centro,PORTO REAL,-22.41779,-44.30346,https://resources.cemaden.gov.br/dados/311_24.json,7575,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330411002A,Bulhões,PORTO REAL,-22.4702,-44.3526,https://resources.cemaden.gov.br/dados/311_24.json,7576,0,,2026-11-15 11:04:41 UTC
+Cemaden,330414405A,Parque Palmeiras,QUEIMADOS,-22.6915,-43.5801,https://resources.cemaden.gov.br/dados/311_24.json,7577,0,,2026-11-15 11:04:41 UTC
+Cemaden,330414406A,Fazendinha,QUEIMADOS,-22.75,-43.626,https://resources.cemaden.gov.br/dados/311_24.json,7578,0,,2026-11-15 11:04:41 UTC
+Cemaden,330420102A,Cidade Alegria,RESENDE,-22.4812,-44.4926,https://resources.cemaden.gov.br/dados/311_24.json,7580,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330420105A,Visconde de Mauá,RESENDE,-22.3308,-44.536,https://resources.cemaden.gov.br/dados/311_24.json,7583,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330430001A,Centro,RIO BONITO,-22.70755,-42.62471,https://resources.cemaden.gov.br/dados/311_24.json,7584,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330440901A,Centro,RIO CLARO,-22.7224,-44.1424,https://resources.cemaden.gov.br/dados/311_24.json,7588,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455710A,Jardim Maravilha,RIO DE JANEIRO,-22.9592,-43.6082,https://resources.cemaden.gov.br/dados/311_24.json,7591,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455711A,Santa Cruz,RIO DE JANEIRO,-22.8897,-43.7175,https://resources.cemaden.gov.br/dados/311_24.json,7592,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455712A,Realengo Batan,RIO DE JANEIRO,-22.864,-43.425,https://resources.cemaden.gov.br/dados/311_24.json,7593,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455713A,Padre Miguel,RIO DE JANEIRO,-22.8689,-43.4507,https://resources.cemaden.gov.br/dados/311_24.json,7594,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455714A,Salgueiro,RIO DE JANEIRO,-22.929,-43.228,https://resources.cemaden.gov.br/dados/311_24.json,7595,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455715A,Andaraí,RIO DE JANEIRO,-22.93,-43.25,https://resources.cemaden.gov.br/dados/311_24.json,7596,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455716A,CIEP Samuel Wainer,RIO DE JANEIRO,-22.921,-43.227,https://resources.cemaden.gov.br/dados/311_24.json,7597,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455718A,Vargem Pequena,RIO DE JANEIRO,-22.989,-43.433,https://resources.cemaden.gov.br/dados/311_24.json,7599,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455719A,Jacarepaguá,RIO DE JANEIRO,-22.9922,-43.367,https://resources.cemaden.gov.br/dados/311_24.json,7600,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455720A,CIEP Dr. João Ramos de Souza,RIO DE JANEIRO,-22.796,-43.203,https://resources.cemaden.gov.br/dados/311_24.json,7601,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455721A,São Conrado,RIO DE JANEIRO,-22.995,-43.269,https://resources.cemaden.gov.br/dados/311_24.json,7602,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455722A,Catete,RIO DE JANEIRO,-22.923,-43.176,https://resources.cemaden.gov.br/dados/311_24.json,7603,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455724A,Pavuna,RIO DE JANEIRO,-22.8076,-43.3584,https://resources.cemaden.gov.br/dados/311_24.json,7605,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455725A,Vigário Geral,RIO DE JANEIRO,-22.8131,-43.3101,https://resources.cemaden.gov.br/dados/311_24.json,7606,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455726A,Defesa Civil Santa Cruz,RIO DE JANEIRO,-22.894,-43.676,https://resources.cemaden.gov.br/dados/311_24.json,7607,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455728A,Vicente de Carvalho,RIO DE JANEIRO,-22.86086,-43.30756,https://resources.cemaden.gov.br/dados/311_24.json,7609,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455729A,Alto da Boa Vista,RIO DE JANEIRO,-22.9666,-43.2965,https://resources.cemaden.gov.br/dados/311_24.json,7610,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455730A,Tijuca,RIO DE JANEIRO,-22.943,-43.241,https://resources.cemaden.gov.br/dados/311_24.json,7611,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455731A,Usina,RIO DE JANEIRO,-22.948,-43.258,https://resources.cemaden.gov.br/dados/311_24.json,7612,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455732A,Higienópolis,RIO DE JANEIRO,-22.869,-43.265,https://resources.cemaden.gov.br/dados/311_24.json,7613,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330455733A,Pilares,RIO DE JANEIRO,-22.875,-43.299,https://resources.cemaden.gov.br/dados/311_24.json,7614,0,,2026-11-15 11:04:41 UTC
+Cemaden,330455734A,Ilha de Paquetá,RIO DE JANEIRO,-22.7613,-43.1084,https://resources.cemaden.gov.br/dados/311_24.json,7615,0,,2026-11-15 11:04:41 UTC
+Cemaden,330510905A,Defesa Civil,SÃO JOÃO DE MERITI,-22.784,-43.363,https://resources.cemaden.gov.br/dados/311_24.json,7616,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330510906A,Coelho da Rocha,SÃO JOÃO DE MERITI,-22.7734,-43.391,https://resources.cemaden.gov.br/dados/311_24.json,7617,0,,2026-11-15 11:04:41 UTC
+Cemaden,330510907A,Edem,SÃO JOÃO DE MERITI,-22.791,-43.4,https://resources.cemaden.gov.br/dados/311_24.json,7618,0,,2026-11-15 11:04:41 UTC
+Cemaden,330510908A,Agostinho Porto,SÃO JOÃO DE MERITI,-22.784,-43.3787,https://resources.cemaden.gov.br/dados/311_24.json,7619,0,,2026-11-15 11:04:41 UTC
+Cemaden,330550501A,Ipitangas,SAQUAREMA,-22.8777,-42.3924,https://resources.cemaden.gov.br/dados/311_24.json,7620,0,,2026-11-15 11:04:41 UTC
+Cemaden,330555404A,Coletivo Santa Alice,SEROPÉDICA,-22.709,-43.654,https://resources.cemaden.gov.br/dados/311_24.json,7623,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330560401A,Caju,SILVA JARDIM,-22.646,-42.399,https://resources.cemaden.gov.br/dados/311_24.json,7624,0,,2026-11-15 11:04:41 UTC
+Cemaden,330560402A,Aldeia Velha,SILVA JARDIM,-22.4599,-42.3059,https://resources.cemaden.gov.br/dados/311_24.json,7625,0,,2026-11-15 11:04:41 UTC
+Cemaden,330610702A,Centro,VALENÇA,-22.2474,-43.7001,https://resources.cemaden.gov.br/dados/311_24.json,7626,0,,2026-11-15 11:04:41 UTC
+Cemaden,330630501A,Retiro,VOLTA REDONDA,-22.5017,-44.1159,https://resources.cemaden.gov.br/dados/311_24.json,7629,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330630502A,Santa Cruz,VOLTA REDONDA,-22.4639,-44.0942,https://resources.cemaden.gov.br/dados/311_24.json,7630,0,,2026-11-15 11:04:41 UTC
+Cemaden,330110804A,Euclidelândia,CANTAGALO,-21.908,-42.261,https://resources.cemaden.gov.br/dados/311_24.json,8182,0,,2026-11-15 11:04:41 UTC
+Cemaden,330100907A,Baixa Grande,CAMPOS DOS GOYTACAZES,-21.94694,-41.13425,https://resources.cemaden.gov.br/dados/311_24.json,9652,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330180103A,Morro Azul,ENGENHEIRO PAULO DE FRONTIN,-22.47605,-43.58121,https://resources.cemaden.gov.br/dados/311_24.json,9653,0,,2026-11-15 11:04:41 UTC
+Cemaden,330240301A,Glicério,MACAÉ,-22.23599,-42.05539,https://resources.cemaden.gov.br/dados/311_24.json,9654,0,,2026-11-15 11:04:41 UTC
+Cemaden,330430005A,Praça Cruzeiro,RIO BONITO,-22.71081,-42.64796,https://resources.cemaden.gov.br/dados/311_24.json,9656,0,,2026-11-15 11:04:41 UTC
+Cemaden,330440904A,Lídice,RIO CLARO,-22.83523,-44.19387,https://resources.cemaden.gov.br/dados/311_24.json,9657,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330550504A,Verde Vale,SAQUAREMA,-22.90089,-42.47537,https://resources.cemaden.gov.br/dados/311_24.json,9658,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330620601A,Centro,VASSOURAS,-22.40897,-43.65986,https://resources.cemaden.gov.br/dados/311_24.json,9659,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330040705A,Vila Maria,BARRA MANSA,-22.51362,-44.19784,https://resources.cemaden.gov.br/dados/311_24.json,9747,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330040706A,Vila Orlandélia,BARRA MANSA,-22.53582,-44.16231,https://resources.cemaden.gov.br/dados/311_24.json,9748,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330385603A,Lot. Novo Arcozelo,PATY DO ALFERES,-22.4067,-43.42266,https://resources.cemaden.gov.br/dados/311_24.json,9754,0,25.2,2026-11-15 11:04:41 UTC
+Cemaden,330385604A,Avelar,PATY DO ALFERES,-22.32066,-43.40351,https://resources.cemaden.gov.br/dados/311_24.json,9755,0,,2026-11-15 11:04:41 UTC
+Cemaden,330475502A,Barra de Itabapoana,SÃO FRANCISCO DE ITABAPOANA,-21.30067,-40.96742,https://resources.cemaden.gov.br/dados/311_24.json,9758,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330115701A,Catarino,CARDOSO MOREIRA,-21.4868,-41.60967,https://resources.cemaden.gov.br/dados/311_24.json,9759,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330015901A,Verdes Campos,APERIBÉ,-21.61792,-42.11825,https://resources.cemaden.gov.br/dados/311_24.json,9798,0,2.6,2026-11-15 11:04:41 UTC
+Cemaden,330060501A,Lia Márcia,BOM JESUS DO ITABAPOANA,-21.13654,-41.6779,https://resources.cemaden.gov.br/dados/311_24.json,9799,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330090201A,Centro,CAMBUCI,-21.57622,-41.90894,https://resources.cemaden.gov.br/dados/311_24.json,9800,0,,2026-11-15 11:04:41 UTC
+Cemaden,330205601A,São Caetano,ITALVA,-21.43092,-41.69044,https://resources.cemaden.gov.br/dados/311_24.json,9801,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330210601A,Centro,ITAOCARA,-21.6702,-42.07945,https://resources.cemaden.gov.br/dados/311_24.json,9802,0,,2026-11-15 11:04:41 UTC
+Cemaden,330220501A,Aeroporto,ITAPERUNA,-21.21643,-41.87642,https://resources.cemaden.gov.br/dados/311_24.json,9803,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330220502A,Distrito de Raposo,ITAPERUNA,-21.1002,-42.1118,https://resources.cemaden.gov.br/dados/311_24.json,9804,0,,2026-11-15 11:04:41 UTC
+Cemaden,330230401A,Centro,LAJE DO MURIAÉ,-21.20677,-42.12242,https://resources.cemaden.gov.br/dados/311_24.json,9805,0,,2026-11-15 11:04:41 UTC
+Cemaden,330300501A,Centro,MIRACEMA,-21.41234,-42.19681,https://resources.cemaden.gov.br/dados/311_24.json,9806,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330310401A,Centro,NATIVIDADE,-21.04321,-41.97819,https://resources.cemaden.gov.br/dados/311_24.json,9807,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330410201A,Centro,PORCIÚNCULA,-20.9678,-42.04257,https://resources.cemaden.gov.br/dados/311_24.json,9808,0,,2026-11-15 11:04:41 UTC
+Cemaden,330470602A,Dezessete,SANTO ANTÔNIO DE PÁDUA,-21.53168,-42.19656,https://resources.cemaden.gov.br/dados/311_24.json,9809,0,,2026-11-15 11:04:41 UTC
+Cemaden,330470601A,Centro,SANTO ANTÔNIO DE PÁDUA,-21.54493,-42.18059,https://resources.cemaden.gov.br/dados/311_24.json,9810,0,,2026-11-15 11:04:41 UTC
+Cemaden,330480501A,SAO FIDELIS,SÃO FIDÉLIS,-21.64694,-41.74587,https://resources.cemaden.gov.br/dados/311_24.json,9811,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330093601A,G2-330093601A,CARAPEBUS,-22.19259,-41.66799,https://resources.cemaden.gov.br/dados/311_24.json,18785,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330093603A,G2-330093603A,CARAPEBUS,-22.21505,-41.66723,https://resources.cemaden.gov.br/dados/311_24.json,18786,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330093602A,G2-330093602A,CARAPEBUS,-22.15983,-41.58169,https://resources.cemaden.gov.br/dados/311_24.json,18787,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330130601A,G2-330130601A,CASIMIRO DE ABREU,-22.49377,-42.20457,https://resources.cemaden.gov.br/dados/311_24.json,18788,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330130603A,G2-330130603A,CASIMIRO DE ABREU,-22.54046,-41.98991,https://resources.cemaden.gov.br/dados/311_24.json,18789,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330130602A,G2-330130602A,CASIMIRO DE ABREU,-22.491,-42.12873,https://resources.cemaden.gov.br/dados/311_24.json,18790,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330140501A,G2-330140501A,CONCEIÇÃO DE MACABU,-22.08,-41.88385,https://resources.cemaden.gov.br/dados/311_24.json,18791,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330140503A,G2-330140503A,CONCEIÇÃO DE MACABU,-22.08316,-41.87019,https://resources.cemaden.gov.br/dados/311_24.json,18792,0,0.2,2026-11-15 11:04:41 UTC
+Cemaden,330140502A,G2-330140502A,CONCEIÇÃO DE MACABU,-22.08691,-41.73896,https://resources.cemaden.gov.br/dados/311_24.json,18793,0,3.4,2026-11-15 11:04:41 UTC
+Cemaden,330290802A,G2-330290802A,MIGUEL PEREIRA,-22.45615,-43.47292,https://resources.cemaden.gov.br/dados/311_24.json,18794,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330290801A,G2-330290801A,MIGUEL PEREIRA,-22.4456,-43.44962,https://resources.cemaden.gov.br/dados/311_24.json,18795,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330290803A,G2-330290803A,MIGUEL PEREIRA,-22.53485,-43.56865,https://resources.cemaden.gov.br/dados/311_24.json,18796,0,0.4,2026-11-15 11:04:41 UTC
+Cemaden,330500002A,G2-330500002A,SÃO JOÃO DA BARRA,-21.70967,-41.03019,https://resources.cemaden.gov.br/dados/311_24.json,18797,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330500001A,G2-330500001A,SÃO JOÃO DA BARRA,-21.63338,-41.0496,https://resources.cemaden.gov.br/dados/311_24.json,18798,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330500003A,G2-330500003A,SÃO JOÃO DA BARRA,-21.90375,-40.9855,https://resources.cemaden.gov.br/dados/311_24.json,18799,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330615602A,G2-330615602A,VARRE-SAI,-20.9279,-41.86727,https://resources.cemaden.gov.br/dados/311_24.json,18800,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330615601A,G2-330615601A,VARRE-SAI,-20.93149,-41.8677,https://resources.cemaden.gov.br/dados/311_24.json,18801,0,0.0,2026-11-15 11:04:41 UTC
+Cemaden,330615603A,G2-330615603A,VARRE-SAI,-20.85761,-41.74332,https://resources.cemaden.gov.br/dados/311_24.json,18802,0,2.0,2026-11-15 11:04:41 UTC

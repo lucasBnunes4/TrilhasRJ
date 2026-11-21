@@ -1,0 +1,127 @@
+id_fonte,id_trilha,url,publicador,tipo_fonte,autor,id_externo,periodo_registro,data_publicacao,data_coleta
+RIO-PNT-001-F01,RIO-PNT-001,https://pt.wikiloc.com/trilhas-trekking/portao-pnt-pico-da-tijuca-portao-pnt-sem-pressa-64855460,Wikiloc,relato_comunitario,Rossana Spena,64855460,2021-01,2021-01-30,2026-11-10
+RIO-PEPB-001-F01,RIO-PEPB-001,https://pt.wikiloc.com/trilhas-trekking/piabas-x-prainha-via-morro-da-onca-caete-boa-vista-cabritos-pepb-48958187,Wikiloc,relato_comunitario,Montanhistas Independentes do Brasil,48958187,2020-05,2020-05-05,2026-11-10
+RIO-PEPB-002-F01,RIO-PEPB-002,https://pt.wikiloc.com/trilhas-trekking/pedra-rosilha-circuito-pepb-48089007,Wikiloc,relato_comunitario,Montanhistas Independentes do Brasil,48089007,2020-03,2020-03-27,2026-11-10
+RIO-GRU-001-F01,RIO-GRU-001,https://pt.wikiloc.com/trilhas-trekking/pedra-do-telegrafo-pedra-do-pontal-e-reserva-de-grumari-35349034,Wikiloc,relato_comunitario,Trek Mundi,35349034,2017-05,2019-04-17,2026-11-10
+RIO-CHAC-001-F01,RIO-CHAC-001,https://pt.wikiloc.com/trilhas-trekking/travessia-copacabana-x-botafogo-passando-pela-agulhinha-inhanga-matrilhas-102435311,Wikiloc,relato_comunitario,Alberto Matrilhas,102435311,2022-05,2022-05-11,2026-11-10
+RIO-PNT-002-F01,RIO-PNT-002,https://pt.wikiloc.com/trilhas-trekking/lagoa-azul-taunay-escragnolle-bico-do-papagaio-cocanha-20728159,Wikiloc,relato_comunitario,dsilva.rocha,20728159,2017-11,2017-11-03,2026-11-10
+RIO-PNT-003-F01,RIO-PNT-003,https://pt.wikiloc.com/trilhas-trekking/pedra-da-gavea-via-carrasqueira-37912439,Wikiloc,relato_comunitario,carlos steinhoefel,37912439,2019-06,2019-06-22,2026-11-10
+RIO-GRU-002-F01,RIO-GRU-002,https://pt.wikiloc.com/trilhas-trekking/grumari-inferno-funda-meio-38291844,Wikiloc,relato_comunitario,Alessandro Valente Vieira,38291844,2019-07,2019-07-03,2026-11-10
+RIO-PEPB-003-F01,RIO-PEPB-003,https://pt.wikiloc.com/trilhas-trekking/travessia-lameirao-x-viegas-pepb-48418928,Wikiloc,relato_comunitario,Montanhistas Independentes do Brasil,48418928,2020-04,2020-04-14,2026-11-10
+RIO-PEPB-004-F01,RIO-PEPB-004,https://pt.wikiloc.com/trilhas-trekking/pedra-do-osso-pedra-jesus-vem-mirante-dos-teixeiras-9o-dia-da-transcarioca-18190386,Wikiloc,relato_comunitario,dsilva.rocha,18190386,2017-06,2017-06-12,2026-11-10
+NIT-PESET-001-F01,NIT-PESET-001,https://pt.wikiloc.com/trilhas-trekking/trilha-morro-das-andorinhas-masn-19097147,Wikiloc,relato_comunitario,Monica Akemi,19097147,2017-08,2017-08-10,2026-11-10
+NIT-PARNIT-001-F01,NIT-PARNIT-001,https://pt.wikiloc.com/trilhas-trekking/morro-do-santo-inacio-trilha-dos-eucaliptos-e-travessia-tupinamba-trecho-bonus-da-transcarioca-22919850,Wikiloc,relato_comunitario,dsilva.rocha,22919850,2018-02,2018-02-26,2026-11-10
+NIT-PESET-002-F01,NIT-PESET-002,https://pt.wikiloc.com/trilhas-trekking/trilha-da-pedra-do-elefante-alto-mourao-em-niteroi-marcelo-32814889,Wikiloc,relato_comunitario,mar_celoferreira,32814889,2014-10,2019-02-04,2026-11-10
+NIT-PARNIT-002-F01,NIT-PARNIT-002,https://pt.wikiloc.com/trilhas-trekking/travessia-tupinamba-parnit-17506580,Wikiloc,relato_comunitario,Thiago Andrade de Sousa,17506580,2017-04,2017-04-30,2026-11-10
+NIT-OUT-001-F01,NIT-OUT-001,https://pt.wikiloc.com/trilhas-trekking/travessia-vila-progresso-x-trilha-das-esmeraldas-x-av-central-13014167,Wikiloc,relato_comunitario,MarcosLima,13014167,2016-04,2016-04-19,2026-11-10
+NIT-PESET-003-F01,NIT-PESET-003,https://pt.wikiloc.com/trilhas-trekking/caminho-de-darwin-x-pedra-itaocaia-17269926,Wikiloc,relato_comunitario,Rick Moreira,17269926,2017-04,2017-04-16,2026-11-10
+NIT-PC-001-F01,NIT-PC-001,https://pt.wikiloc.com/trilhas-trekking/trilhas-no-parque-da-cidade-41005968,Wikiloc,relato_comunitario,luliweb,41005968,2019-09,2019-09-07,2026-11-10
+NIT-PARNIT-003-F01,NIT-PARNIT-003,https://pt.wikiloc.com/trilhas-trekking/morro-da-viracao-e-mirante-da-tapera-25679681,Wikiloc,relato_comunitario,dsilva.rocha,25679681,2018-06,2018-06-11,2026-11-10
+NIT-PESET-004-F01,NIT-PESET-004,https://pt.wikiloc.com/trilhas-trekking/costao-de-itacoatiara-e-bananal-serra-da-tiririca-8692348,Wikiloc,relato_comunitario,fidelisffv,8692348,2015-01,2015-01-18,2026-11-10
+PAR-REJ-001-F01,PAR-REJ-001,https://pt.wikiloc.com/trilhas-trekking/travessia-da-juatinga-paraty-rj-06-dias-255358151,Wikiloc,relato_comunitario,mari_oikawa,255358151,2026-03,2026-03-21,2026-11-10
+PAR-OUT-001-F01,PAR-OUT-001,https://pt.wikiloc.com/trilhas-trekking/trilha-dos-7-degraus-antigo-caminho-do-cafe-serra-do-mar-de-paraty-rj-1633572,Wikiloc,relato_comunitario,J. Augusto8,1633572,,2011-04-22,2026-11-10
+PAR-OUT-002-F01,PAR-OUT-002,https://pt.wikiloc.com/trilhas-trekking/praia-do-pontal-poco-dos-ingleses-paratiana-paraty-rj-256010134,Wikiloc,relato_comunitario,mari_oikawa,256010134,2026-03,2026-03-26,2026-11-10
+PAR-REJ-002-F01,PAR-REJ-002,https://pt.wikiloc.com/trilhas-trekking/travessia-da-joatinga-cajaiba-laranjeiras-9508791,Wikiloc,relato_comunitario,paulocarrico,9508791,2015-02,2015-04-28,2026-11-10
+PAR-REJ-003-F01,PAR-REJ-003,https://pt.wikiloc.com/trilhas-trekking/travessia-ponta-da-joatinga-praia-da-sumaca-28863022,Wikiloc,relato_comunitario,Trilhando! (Trekking e Natureza),28863022,2018-09,2018-09-22,2026-11-10
+PAR-OUT-003-F01,PAR-OUT-003,https://pt.wikiloc.com/trilhas-trekking/paraty-204726882,Wikiloc,relato_comunitario,Andre Neves.,204726882,2025-03,2025-03-13,2026-11-10
+PAR-OUT-004-F01,PAR-OUT-004,https://pt.wikiloc.com/trilhas-trekking/ponte-branca-macela-via-3-degraus-22046278,Wikiloc,relato_comunitario,sergio.ulpiano,22046278,2018-01,2018-01-14,2026-11-10
+PAR-OUT-005-F01,PAR-OUT-005,https://pt.wikiloc.com/trilhas-trekking/thila-do-forte-imperial-acesso-a-praia-do-forte-134764689,Wikiloc,relato_comunitario,Allcume^^ Outdoor,134764689,2023-05,2023-05-14,2026-11-10
+ANG-OUT-001-F01,ANG-OUT-001,https://pt.wikiloc.com/trilhas-trekking/travessia-angra-dos-reis-x-lidice-pela-linha-ferrea-e-subida-ao-topo-da-pedra-chata-serra-do-mar-de-910073,Wikiloc,relato_comunitario,J. Augusto8,910073,,2010-05-17,2026-11-10
+ANG-OUT-002-F01,ANG-OUT-002,https://pt.wikiloc.com/trilhas-trekking/travessia-praia-do-vitorino-x-praia-de-jurubaiba-ilha-da-gipoia-angra-dos-reis-196406503,Wikiloc,relato_comunitario,Andre Neves.,196406503,2024-12,2024-12-30,2026-11-10
+ANG-OUT-003-F01,ANG-OUT-003,https://pt.wikiloc.com/trilhas-trekking/d6-caminho-de-maria-angra-dos-reis-frade-20059989,Wikiloc,relato_comunitario,Pedro Spineti,20059989,2017-10,2017-10-03,2026-11-10
+ANG-OUT-004-F01,ANG-OUT-004,https://pt.wikiloc.com/trilhas-trekking/morro-do-bule-angra-dos-reis-50054337,Wikiloc,relato_comunitario,Marcelo Leonardo 1,50054337,2020-05,2020-05-28,2026-11-10
+ANG-OUT-005-F01,ANG-OUT-005,https://pt.wikiloc.com/trilhas-trekking/volta-na-ilha-grande-30667230,Wikiloc,relato_comunitario,renata nascimento,30667230,2018-11,2018-11-18,2026-11-10
+ANG-OUT-006-F01,ANG-OUT-006,https://pt.wikiloc.com/trilhas-trekking/linha-do-trem-campo-belo-areal-banqueta-belem-221665227,Wikiloc,relato_comunitario,Willian Nascimentto,221665227,2025-07,2025-07-12,2026-11-10
+ANG-OUT-007-F01,ANG-OUT-007,https://pt.wikiloc.com/trilhas-trekking/pier-da-ilha-gipoia-ate-praia-do-dentista-47088576,Wikiloc,relato_comunitario,Richard Cop,47088576,2020-02,2020-02-23,2026-11-10
+ANG-OUT-008-F01,ANG-OUT-008,https://pt.wikiloc.com/trilhas-trekking/travessia-centro-x-enseada-angra-dos-reis-114220330,Wikiloc,relato_comunitario,luciano_gomesaraujo,114220330,2022-09,2022-09-21,2026-11-10
+ANG-OUT-009-F01,ANG-OUT-009,https://pt.wikiloc.com/trilhas-trekking/trilha-interpretativa-monte-das-oracoes-199868467,Wikiloc,relato_comunitario,escaladaangra,199868467,2025-01,2025-01-31,2026-11-10
+MAN-PMU-001-F01,MAN-PMU-001,https://pt.wikiloc.com/trilhas-trekking/perque-natural-municipal-da-pedra-do-urubu-costa-verde-mangaratiba-130066629,Wikiloc,relato_comunitario,Juan Levate,130066629,2023-04,2023-04-01,2026-11-10
+MAN-PMU-002-F01,MAN-PMU-002,https://pt.wikiloc.com/trilhas-trekking/pedra-urubu-mangaratiba-147306424,Wikiloc,relato_comunitario,jessica.07,147306424,2023-09,2023-09-17,2026-11-10
+MAN-OUT-001-F01,MAN-OUT-001,https://pt.wikiloc.com/trilhas-trekking/pedra-da-bandeira-mangaratiba-182274029,Wikiloc,relato_comunitario,Andre Neves.,182274029,2024-08,2024-08-23,2026-11-10
+MAN-PMU-003-F01,MAN-PMU-003,https://pt.wikiloc.com/trilhas-trekking/travessia-mangara-da-montanha-ao-mar-270231273,Wikiloc,relato_comunitario,IPHAR: Inst. de Pesq. Histórica e Arqueológica,270231273,2026-06,2026-06-20,2026-11-10
+MAN-OUT-002-F01,MAN-OUT-002,https://pt.wikiloc.com/trilhas-trekking/circuito-das-cachoeiras-do-ingaiba-mangaratiba-61458907,Wikiloc,relato_comunitario,LFarias Tour Agencia de Turismo,61458907,2020-11,2020-11-29,2026-11-10
+MAN-OUT-003-F01,MAN-OUT-003,https://pt.wikiloc.com/trilhas-trekking/circuito-das-cachoeiras-ingaiba-mangaratiba-157719273,Wikiloc,relato_comunitario,LFarias Tour Agencia de Turismo,157719273,2024-01,2024-01-08,2026-11-10
+MAN-OUT-004-F01,MAN-OUT-004,https://pt.wikiloc.com/trilhas-trekking/praia-ibicui-x-santo-antonio-70044421,Wikiloc,relato_comunitario,Fabrycyo,70044421,2021-04,2021-04-07,2026-11-10
+MAN-PMU-004-F01,MAN-PMU-004,https://pt.wikiloc.com/trilhas-trekking/volta-da-pedra-do-urubu-mangaratiba-138653876,Wikiloc,relato_comunitario,velascov8,138653876,2023-06,2023-06-24,2026-11-10
+PET-PNSO-001-F01,PET-PNSO-001,https://pt.wikiloc.com/trilhas-trekking/cobicado-x-ventania-via-morin-108907892,Wikiloc,relato_comunitario,Renan Machado96,108907892,2022-07,2022-07-26,2026-11-10
+PET-OUT-001-F01,PET-OUT-001,https://pt.wikiloc.com/trilhas-trekking/travessia-cobicado-ventania-petropolis-rj-101632666,Wikiloc,relato_comunitario,camillancampos,101632666,2022-05,2022-05-02,2026-11-10
+PET-OUT-002-F01,PET-OUT-002,https://pt.wikiloc.com/trilhas-trekking/pedra-do-retiro-e-retiro-mirim-204052830,Wikiloc,relato_comunitario,Eduardo Joaquim - Edu Selvagem,204052830,2025-03,2025-03-07,2026-11-10
+PET-OUT-003-F01,PET-OUT-003,https://pt.wikiloc.com/trilhas-trekking/tapera-do-morin-petropolis-rj-56258553,Wikiloc,relato_comunitario,leopinho,56258553,2020-09,2020-09-06,2026-11-10
+PET-OUT-004-F01,PET-OUT-004,https://pt.wikiloc.com/trilhas-trekking/travessia-cobicado-x-ventania-pedra-do-diabo-e-pedra-do-inferno-55842669,Wikiloc,relato_comunitario,guilherme caricchio,55842669,2020-08,2020-08-31,2026-11-10
+PET-OUT-005-F01,PET-OUT-005,https://pt.wikiloc.com/trilhas-trekking/travessia-cobicado-x-ventania-em-petropolis-marcelo-20744406,Wikiloc,relato_comunitario,mar_celoferreira,20744406,2017-11,2017-11-03,2026-11-10
+PET-OUT-006-F01,PET-OUT-006,https://pt.wikiloc.com/trilhas-trekking/travessia-cobicado-x-ventania-ate-cachoeira-caxambu-129556120,Wikiloc,relato_comunitario,Henrique Baldo,129556120,2023-03,2023-03-26,2026-11-10
+PET-OUT-007-F01,PET-OUT-007,https://pt.wikiloc.com/trilhas-trekking/trilha-cobicado-morro-dos-vandalos-40788399,Wikiloc,relato_comunitario,Cayo Gomes,40788399,2019-09,2019-09-01,2026-11-10
+NFR-OUT-001-F01,NFR-OUT-001,https://pt.wikiloc.com/trilhas-trekking/pedra-de-lurdes-e-mirante-de-cachoeiras-de-macacu-194234842,Wikiloc,relato_comunitario,Allan 13,194234842,2024-12,2024-12-07,2026-11-10
+NFR-OUT-002-F01,NFR-OUT-002,https://pt.wikiloc.com/trilhas-trekking/pedra-do-imperador-ou-elefante-nova-friburgo-48420099,Wikiloc,relato_comunitario,Raphael Moreira dos Santos,48420099,2020-04,2020-04-14,2026-11-10
+NFR-OUT-003-F01,NFR-OUT-003,https://pt.wikiloc.com/trilhas-trekking/nao-me-sigam-faco-caminhos-sem-rumo-que-nao-existem-192875663,Wikiloc,relato_comunitario,Allan 13,192875663,2024-11,2024-11-24,2026-11-10
+NFR-PETP-001-F01,NFR-PETP-001,https://pt.wikiloc.com/trilhas-trekking/pico-da-caledonia-petp-24879473,Wikiloc,relato_comunitario,fidelisffv,24879473,2018-05,2018-05-13,2026-11-10
+NFR-OUT-004-F01,NFR-OUT-004,https://pt.wikiloc.com/trilhas-trekking/catarina-pai-200626427,Wikiloc,relato_comunitario,Marcelo Vieira,200626427,2025-02,2025-02-06,2026-11-10
+NFR-OUT-005-F01,NFR-OUT-005,https://pt.wikiloc.com/trilhas-trekking/travessia-das-catarinas-240009062,Wikiloc,relato_comunitario,Marcelo Vieira,240009062,2025-11,2025-11-12,2026-11-10
+NFR-OUT-006-F01,NFR-OUT-006,https://pt.wikiloc.com/trilhas-trekking/catarina-pai-via-ciep-224971093,Wikiloc,relato_comunitario,Rodrigo 0liveira,224971093,2025-08,2025-08-03,2026-11-10
+NFR-OUT-007-F01,NFR-OUT-007,https://pt.wikiloc.com/trilhas-trekking/marchitovarella-17507497,Wikiloc,relato_comunitario,Neder Marchito,17507497,2017-04,2017-04-30,2026-11-10
+NFR-OUT-008-F01,NFR-OUT-008,https://pt.wikiloc.com/trilhas-trekking/5-montanhas-no-dia-16210939,Wikiloc,relato_comunitario,antonio varella,16210939,2017-01,2017-01-25,2026-11-10
+ARR-OUT-001-F01,ARR-OUT-001,https://pt.wikiloc.com/trilhas-trekking/travessia-de-arraial-do-cabo-marcelo-18794138,Wikiloc,relato_comunitario,mar_celoferreira,18794138,2017-07,2017-07-23,2026-11-10
+ARR-OUT-002-F01,ARR-OUT-002,https://pt.wikiloc.com/trilhas-trekking/prainha-x-mirantes-x-praia-do-forno-arraial-do-cabo-188801851,Wikiloc,relato_comunitario,XRVictorSilva,188801851,2024-10,2024-10-19,2026-11-10
+ARR-OUT-003-F01,ARR-OUT-003,https://pt.wikiloc.com/trilhas-trekking/arraial-do-cabo-trekking-prainha-x-praia-gracainha-ate-a-ponta-28212663,Wikiloc,relato_comunitario,RUMO Assessoria Esportiva,28212663,2018-09,2018-09-01,2026-11-10
+ARR-OUT-004-F01,ARR-OUT-004,https://pt.wikiloc.com/trilhas-trekking/trilha-ilha-do-farol-farol-novo-arraial-do-cabo-rj-240864274,Wikiloc,relato_comunitario,XRVictorSilva,240864274,2025-11,2025-11-19,2026-11-10
+ARR-OUT-005-F01,ARR-OUT-005,https://pt.wikiloc.com/trilhas-trekking/trilha-prainha-x-porto-do-forno-26793918,Wikiloc,relato_comunitario,Jonathan Galleguillos,26793918,2018-07,2018-07-21,2026-11-10
+ARR-OUT-006-F01,ARR-OUT-006,https://pt.wikiloc.com/trilhas-trekking/complexo-arraial-do-cabo-rj-212335316,Wikiloc,relato_comunitario,oajjao,212335316,2025-04,2025-05-05,2026-11-10
+ARR-OUT-007-F01,ARR-OUT-007,https://pt.wikiloc.com/trilhas-trekking/praia-do-forno-prainha-praia-da-gracainha-ponta-do-cabo-mirantes-arraial-do-cabo-rj-79928529,Wikiloc,relato_comunitario,Carlos Amaral de Abreu,79928529,2021-08,2021-08-03,2026-11-10
+ARR-OUT-008-F01,ARR-OUT-008,https://pt.wikiloc.com/trilhas-trekking/circuito-praia-do-forno-prainha-e-centro-de-arraial-do-cabo-61556645,Wikiloc,relato_comunitario,CESARE TONA (Bugiu),61556645,2020-12,2020-12-01,2026-11-10
+ARR-OUT-009-F01,ARR-OUT-009,https://pt.wikiloc.com/trilhas-trekking/trilha-praia-do-pontal-x-prainha-em-arraial-morro-do-miranda-marcelo-15077263,Wikiloc,relato_comunitario,mar_celoferreira,15077263,2016-10,2016-10-11,2026-11-10
+ARR-OUT-010-F01,ARR-OUT-010,https://pt.wikiloc.com/trilhas-trekking/praias-do-pontal-do-atalaia-e-praia-brava-61645892,Wikiloc,relato_comunitario,CESARE TONA (Bugiu),61645892,2020-12,2020-12-03,2026-11-10
+SAQ-OUT-001-F01,SAQ-OUT-001,https://pt.wikiloc.com/trilhas-trekking/saquarema-ponte-dos-leites-124181467,Wikiloc,relato_comunitario,Alexander trilha,124181467,2023-01,2023-01-24,2026-11-10
+SAQ-OUT-002-F01,SAQ-OUT-002,https://pt.wikiloc.com/trilhas-trekking/trilha-da-reserva-ecologica-estadual-de-jacare-saquarema-rj-22656465,Wikiloc,relato_comunitario,Pamela Almeida,22656465,2018-02,2018-02-14,2026-11-10
+SAQ-OUT-003-F01,SAQ-OUT-003,https://pt.wikiloc.com/trilhas-trekking/saquarema-mombaca-110064011,Wikiloc,relato_comunitario,Eleticie Andrade,110064011,2022-08,2022-08-08,2026-11-10
+SAQ-OUT-004-F01,SAQ-OUT-004,https://pt.wikiloc.com/trilhas-trekking/saquarema-caminhando-na-areia-99552686,Wikiloc,relato_comunitario,francoiscdepaiva,99552686,2022-04,2022-04-10,2026-11-10
+SAQ-OUT-005-F01,SAQ-OUT-005,https://pt.wikiloc.com/trilhas-trekking/saquarema-praia-da-vila-21784855,Wikiloc,relato_comunitario,Ericksimas,21784855,2017-12,2017-12-31,2026-11-10
+SAQ-OUT-006-F01,SAQ-OUT-006,https://pt.wikiloc.com/trilhas-trekking/lagoa-de-saquarema-112592757,Wikiloc,relato_comunitario,Eleticie Andrade,112592757,2022-09,2022-09-03,2026-11-10
+RIB-OUT-001-F01,RIB-OUT-001,https://pt.wikiloc.com/trilhas-trekking/subida-da-asa-delta-27751690,Wikiloc,relato_comunitario,Douglas Prevot,27751690,2018-08,2018-08-19,2026-11-10
+RIB-OUT-002-F01,RIB-OUT-002,https://pt.wikiloc.com/trilhas-trekking/cachoeira-dos-bagres-x-serra-31019704,Wikiloc,relato_comunitario,Diego Aventureiros Livres,31019704,2018-12,2018-12-02,2026-11-10
+RIB-OUT-003-F01,RIB-OUT-003,https://pt.wikiloc.com/trilhas-trekking/trilha-principal-do-sitio-amanheser-da-terra-174388558,Wikiloc,relato_comunitario,joaojorgecabral,174388558,2024-06,2024-06-16,2026-11-10
+RIB-OUT-004-F01,RIB-OUT-004,https://pt.wikiloc.com/trilhas-trekking/cachoeira-de-tomascar-com-partida-em-rio-bonito-176860896,Wikiloc,relato_comunitario,Jose Porto 1,176860896,2024-07,2024-07-10,2026-11-10
+RIB-OUT-005-F01,RIB-OUT-005,https://pt.wikiloc.com/trilhas-trekking/bosque-clube-x-italianos-x-serra-50942420,Wikiloc,relato_comunitario,BB Benevides,50942420,2020-06,2020-06-13,2026-11-10
+RIB-OUT-006-F01,RIB-OUT-006,https://pt.wikiloc.com/trilhas-trekking/rota-de-catimbau-rota-01-178053047,Wikiloc,relato_comunitario,joseotaviomoraes2,178053047,2024-07,2024-07-20,2026-11-10
+RIB-OUT-007-F01,RIB-OUT-007,https://pt.wikiloc.com/trilhas-trekking/boa-esperanca-rota-08-178029669,Wikiloc,relato_comunitario,joseotaviomoraes2,178029669,2024-07,2024-07-20,2026-11-10
+SMM-OUT-001-F01,SMM-OUT-001,https://pt.wikiloc.com/trilhas-trekking/pedra-dubois-36480138,Wikiloc,relato_comunitario,MARCELO GARCIA,36480138,2019-05,2019-05-15,2026-11-10
+SMM-OUT-002-F01,SMM-OUT-002,https://pt.wikiloc.com/trilhas-trekking/santa-maria-madalena-x-trajano-de-morais-caminho-da-mata-atlantica-1-250339320,Wikiloc,relato_comunitario,fabioxp,250339320,2026-02,2026-02-14,2026-11-10
+SMM-PED-001-F01,SMM-PED-001,https://pt.wikiloc.com/trilhas-trekking/travessia-rifa-x-macuco-do-imbe-p-e-do-desengano-16825575,Wikiloc,relato_comunitario,fberardi,16825575,2009-07,2017-03-18,2026-11-10
+SMM-OUT-003-F01,SMM-OUT-003,https://pt.wikiloc.com/trilhas-trekking/cachoeira-do-escorrega-com-partida-em-santa-maria-madalena-270612178,Wikiloc,relato_comunitario,Crisnatrilha,270612178,2026-06,2026-06-21,2026-11-10
+SMM-OUT-004-F01,SMM-OUT-004,https://pt.wikiloc.com/trilhas-trekking/caminho-da-mata-atlantica-santa-maria-madalena-igreja-a-trajano-de-moraes-pousada-do-roger-215278500,Wikiloc,relato_comunitario,Rose Faria,215278500,2025-05,2025-05-25,2026-11-10
+SMM-OUT-005-F01,SMM-OUT-005,https://pt.wikiloc.com/trilhas-trekking/centro-madalena-x-estalagem-morumbeca-244468944,Wikiloc,relato_comunitario,nabymansur,244468944,2025-12,2025-12-22,2026-11-10
+SMM-OUT-006-F01,SMM-OUT-006,https://pt.wikiloc.com/trilhas-trekking/centro-de-madalena-centro-de-visitantes-ped-pedra-dubois-110568539,Wikiloc,relato_comunitario,Anmielle S Carvalho,110568539,2022-08,2022-08-14,2026-11-10
+SMM-OUT-007-F01,SMM-OUT-007,https://pt.wikiloc.com/trilhas-trekking/ribeirao-vermelho-terras-frias-santa-maria-madalena-125477531,Wikiloc,relato_comunitario,André Luiz O. Costa,125477531,2023-01,2023-02-10,2026-11-10
+CGO-OUT-001-F01,CGO-OUT-001,https://pt.wikiloc.com/trilhas-trekking/pedra-lisa-campos-dos-goytacases-56109548,Wikiloc,relato_comunitario,Eduardo Joaquim - Edu Selvagem,56109548,2020-09,2020-09-05,2026-11-10
+CGO-OUT-002-F01,CGO-OUT-002,https://pt.wikiloc.com/trilhas-trekking/trilha-da-cachoeira-da-grandeza-de-cima-aleluia-do-imbe-campos-dos-goytacazes-rj-14703821,Wikiloc,relato_comunitario,Edgar Franco,14703821,2016-09,2016-09-10,2026-11-10
+CGO-OUT-003-F01,CGO-OUT-003,https://pt.wikiloc.com/trilhas-trekking/desafio-desengano-2017-18868798,Wikiloc,relato_comunitario,Renato 0liveira,18868798,2017-07,2017-07-28,2026-11-10
+CGO-OUT-004-F01,CGO-OUT-004,https://pt.wikiloc.com/trilhas-trekking/morro-do-itaoca-69123615,Wikiloc,relato_comunitario,RAU NORIYASSU KAKAZU,69123615,2021-03,2021-03-29,2026-11-10
+CGO-PED-001-F01,CGO-PED-001,https://pt.wikiloc.com/trilhas-trekking/travessia-mocoto-campos-x-bela-joana-sao-fidelis-p-e-do-desengano-17051356,Wikiloc,relato_comunitario,fberardi,17051356,2009-08,2017-04-02,2026-11-10
+CGO-OUT-005-F01,CGO-OUT-005,https://pt.wikiloc.com/trilhas-trekking/itaoca-com-trekking-com-furlan-31024240,Wikiloc,relato_comunitario,SouRodolpho,31024240,2018-12,2018-12-02,2026-11-10
+CGO-OUT-006-F01,CGO-OUT-006,https://pt.wikiloc.com/trilhas-trekking/linha-10-1-2-76003466,Wikiloc,relato_comunitario,Kamila Souza 1,76003466,2021-06,2021-06-16,2026-11-10
+CGO-PED-002-F01,CGO-PED-002,https://pt.wikiloc.com/trilhas-trekking/trilha-do-imbe-7141070,Wikiloc,relato_comunitario,Marcio Vitor,7141070,2014-06,2014-06-22,2026-11-10
+TER-PNSO-001-F01,TER-PNSO-001,https://pt.wikiloc.com/trilhas-trekking/pedra-do-sino-teresopolis-15016994,Wikiloc,relato_comunitario, ,15016994,2016-09,2016-10-07,2026-11-10
+TER-PNSO-002-F01,TER-PNSO-002,https://pt.wikiloc.com/trilhas-trekking/trilha-do-cartao-postal-parnaso-sede-teresopolis-15471312,Wikiloc,relato_comunitario,rdonato,15471312,2016-11,2016-11-12,2026-11-10
+TER-PNSO-003-F01,TER-PNSO-003,https://pt.wikiloc.com/trilhas-trekking/trilha-mozart-catao-parnaso-teresopolis-84625440,Wikiloc,relato_comunitario, ,84625440,2021-09,2021-09-24,2026-11-10
+TER-OUT-001-F01,TER-OUT-001,https://pt.wikiloc.com/trilhas-trekking/pedra-da-tartaruga-teresopolis-26400081,Wikiloc,relato_comunitario,Carlos Alexander,26400081,2018-07,2018-07-07,2026-11-10
+TER-OUT-002-F01,TER-OUT-002,https://pt.wikiloc.com/trilhas-trekking/pedra-do-camelo-teresopolis-18905356,Wikiloc,relato_comunitario, ,18905356,2017-07,2017-07-30,2026-11-10
+TER-OUT-003-F01,TER-OUT-003,https://pt.wikiloc.com/trilhas-trekking/pedra-da-ermitage-teresopolis-140174078,Wikiloc,relato_comunitario, ,140174078,2023-07,2023-07-10,2026-11-10
+TER-PNSO-004-F01,TER-PNSO-004,https://pt.wikiloc.com/trilhas-trekking/granja-guarani-mirante-cartao-postal-poco-dois-irmaos-teresopolis-184054876,Wikiloc,relato_comunitario,Minority,184054876,2024-09,2024-09-07,2026-11-10
+TER-PNSO-005-F01,TER-PNSO-005,https://pt.wikiloc.com/trilhas-trekking/trilha-suspensa-parnaso-teresopolis-99844527,Wikiloc,relato_comunitario,guilherme caricchio,99844527,2022-04,2022-04-13,2026-11-10
+TER-OUT-004-F01,TER-OUT-004,https://pt.wikiloc.com/trilhas-trekking/pedra-do-elefante-teresopolis-18925316,Wikiloc,relato_comunitario, ,18925316,2017-07,2017-07-31,2026-11-10
+TER-PNSO-006-F01,TER-PNSO-006,https://pt.wikiloc.com/trilhas-trekking/travessia-petropolis-x-teresopolis-via-portais-de-hercules-parnaso-217300435,Wikiloc,relato_comunitario, ,217300435,2025-06,2025-06-09,2026-11-10
+TER-OUT-005-F01,TER-OUT-005,https://pt.wikiloc.com/trilhas-trekking/travessia-parque-do-imbui-x-caleme-teresopolis-142744985,Wikiloc,relato_comunitario, ,142744985,2023-08,2023-08-06,2026-11-10
+TER-PNSO-007-F01,TER-PNSO-007,https://pt.wikiloc.com/trilhas-trekking/pedra-da-cruz-108764690,Wikiloc,relato_comunitario, ,108764690,2022-07,2022-07-24,2026-11-10
+TER-PETP-001-F01,TER-PETP-001,https://pt.wikiloc.com/trilhas-trekking/cachoeira-dos-frades-petp-teresopolis-55843680,Wikiloc,relato_comunitario,Rodrigo_Marinho,55843680,2020-08,2020-08-31,2026-11-10
+TER-OUT-006-F01,TER-OUT-006,https://pt.wikiloc.com/trilhas-trekking/seio-da-mulher-de-pedra-teresopolis-138825769,Wikiloc,relato_comunitario, ,138825769,2023-06,2023-06-26,2026-11-10
+ITA-PNI-001-F01,ITA-PNI-001,https://pt.wikiloc.com/trilhas-trekking/agulhas-negras-parque-nacional-do-itatiaia-136006083,Wikiloc,relato_comunitario, ,136006083,2023-05,2023-05-28,2026-11-10
+ITA-PNI-002-F01,ITA-PNI-002,https://pt.wikiloc.com/trilhas-trekking/prateleiras-229651913,Wikiloc,relato_comunitario,Carmélio Santos Júnior,229651913,2025-08,2025-08-31,2026-11-10
+ITA-PNI-003-F01,ITA-PNI-003,https://pt.wikiloc.com/trilhas-trekking/morro-do-couto-parque-nacional-do-itatiaia-268412005,Wikiloc,relato_comunitario,cantinhodospuris,268412005,2026-06,2026-06-08,2026-11-10
+ITA-PNI-004-F01,ITA-PNI-004,https://pt.wikiloc.com/trilhas-trekking/cachoeira-aiuruoca-parque-do-itatiaia-6514309,Wikiloc,relato_comunitario,rocury,6514309,2014-04,2014-04-07,2026-11-10
+ITA-PNI-005-F01,ITA-PNI-005,https://pt.wikiloc.com/trilhas-trekking/pedra-do-altar-parque-nacional-do-itatiaia-100191672,Wikiloc,relato_comunitario, ,100191672,2022-04,2022-04-16,2026-11-10
+ITA-PNI-006-F01,ITA-PNI-006,https://pt.wikiloc.com/trilhas-trekking/circuito-cinco-lagos-itatiaia-parque-nacional-de-itatiaia-62377883,Wikiloc,relato_comunitario,Waldyr Neto,62377883,2017-01,2020-12-17,2026-11-10
+ITA-PNI-007-F01,ITA-PNI-007,https://pt.wikiloc.com/trilhas-trekking/travessia-ruy-braga-itatiaia-172163777,Wikiloc,relato_comunitario, ,172163777,2024-05,2024-05-26,2026-11-10
+ITA-PNI-008-F01,ITA-PNI-008,https://pt.wikiloc.com/trilhas-trekking/travessia-serra-negra-itatiaia-127587536,Wikiloc,relato_comunitario, ,127587536,2023-03,2023-03-05,2026-11-10
+ITA-PNI-009-F01,ITA-PNI-009,https://pt.wikiloc.com/trilhas-trekking/cachoeira-veu-da-noiva-cachoeira-itaporani-cachoeira-do-maromba-parque-nacional-do-itatiaia-123958363,Wikiloc,relato_comunitario, ,123958363,2023-01,2023-01-21,2026-11-10
+ITA-PNI-010-F01,ITA-PNI-010,https://pt.wikiloc.com/trilhas-trekking/trilha-dos-tres-picos-parque-nacional-do-itataia-parte-baixa-rj-78713055,Wikiloc,relato_comunitario, ,78713055,2021-07,2021-07-20,2026-11-10
+ITA-PNI-011-F01,ITA-PNI-011,https://pt.wikiloc.com/trilhas-trekking/trilha-lago-azul-parque-nacional-do-itatiaia-16033997,Wikiloc,relato_comunitario,Day Borges,16033997,2017-01,2017-01-07,2026-11-10
+ITA-PNI-012-F01,ITA-PNI-012,https://pt.wikiloc.com/trilhas-trekking/pedra-do-registro-e-mirante-cabeca-de-leao-p-n-itatiaia-161823731,Wikiloc,relato_comunitario, ,161823731,2023-07,2024-02-20,2026-11-10

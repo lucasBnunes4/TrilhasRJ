@@ -1,0 +1,223 @@
+<mxfile host="65bd71144e">
+    <diagram id="trilhas-rj" name="DER Trilhas RJ">
+        <mxGraphModel dx="1279" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1280" pageHeight="920" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" parent="1" style="text;strokeColor=none;fillColor=none;align=left;fontSize=27;fontStyle=1;fontColor=#142B3B;" value="Trilhas RJ · Modelo de dados com Wikiloc" vertex="1">
+                    <mxGeometry height="44" width="1120" x="40" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend" parent="1" style="text;strokeColor=none;fillColor=none;align=left;fontSize=13;fontColor=#456072;" value="PK  chave primária     ·     FK  chave estrangeira     ·     1 e 0..N  cardinalidades" vertex="1">
+                    <mxGeometry height="26" width="1120" x="40" y="67" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha" parent="1" style="swimlane;startSize=38;horizontal=1;rounded=1;arcSize=8;container=1;collapsible=0;recursiveResize=0;html=0;align=left;spacingLeft=10;fontSize=13;fontStyle=1;fontColor=#FFFFFF;fillColor=#174B58;swimlaneFillColor=#FFFFFF;strokeColor=#6F909C;" value="TRILHA  ·  trilhas.csv" vertex="1">
+                    <mxGeometry height="614" width="355" x="40" y="117" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-0" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#DAEBEF;" value="id_trilha | texto · PK" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-1" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="nome | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-2" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="municipio | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="86" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-3" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="uf | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-4" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="unidade_conservacao | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="134" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-5" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="modalidade | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="158" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-6" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="tipo_percurso | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="182" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-7" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="descricao_resumo | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="206" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-8" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="distancia_min_km | decimal" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-9" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="distancia_max_km | decimal" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="254" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-10" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="duracao_minutos_min | inteiro" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="278" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-11" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="duracao_minutos_max | inteiro" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="302" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-12" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="tipo_duracao | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="326" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-13" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="dificuldade_original | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-14" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="ganho_elevacao_m | decimal" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="374" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-15" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="perda_elevacao_m | decimal" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="398" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-16" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="altitude_min_m | decimal" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="422" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-17" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="altitude_max_m | decimal" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="446" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-18" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="latitude_ref | decimal" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="470" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-19" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="longitude_ref | decimal" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="494" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-20" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="tipo_ponto_ref | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="518" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-21" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="geometria_url | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="542" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-22" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="localidade_referencia | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="566" as="geometry"/>
+                </mxCell>
+                <mxCell id="trilha-23" parent="trilha" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="pais | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte" parent="1" style="swimlane;startSize=38;horizontal=1;rounded=1;arcSize=8;container=1;collapsible=0;recursiveResize=0;html=0;align=left;spacingLeft=10;fontSize=13;fontStyle=1;fontColor=#FFFFFF;fillColor=#174B58;swimlaneFillColor=#FFFFFF;strokeColor=#6F909C;" value="FONTE  ·  fontes.csv" vertex="1">
+                    <mxGeometry height="446" width="355" x="442" y="205" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-0" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#DAEBEF;" value="id_fonte | texto · PK" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-1" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#DAEBEF;" value="id_trilha | texto · FK" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-2" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="url | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="86" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-3" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="publicador | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-4" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="tipo_fonte | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="134" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-5" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="autor | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="158" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-6" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="id_externo | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="182" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-7" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="periodo_registro | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="206" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-8" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="data_publicacao | data" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-9" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="data_coleta | data" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="254" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-10" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="fonte_principal | booleano" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="278" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-11" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="titulo_publicado | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="302" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-12" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="url_perfil_autor | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="326" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-13" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="tempo_total_registrado_min | inteiro" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-14" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="tempo_movimento_min | inteiro" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="374" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-15" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="qtd_pontos_gps | inteiro" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="398" as="geometry"/>
+                </mxCell>
+                <mxCell id="fonte-16" parent="fonte" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="trailrank | inteiro" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="422" as="geometry"/>
+                </mxCell>
+                <mxCell id="texto" parent="1" style="swimlane;startSize=38;horizontal=1;rounded=1;arcSize=8;container=1;collapsible=0;recursiveResize=0;html=0;align=left;spacingLeft=10;fontSize=13;fontStyle=1;fontColor=#FFFFFF;fillColor=#174B58;swimlaneFillColor=#FFFFFF;strokeColor=#6F909C;" value="TRILHA_TEXTO  ·  trilha_textos.csv" vertex="1">
+                    <mxGeometry height="158" width="355" x="844" y="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="texto-0" parent="texto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#DAEBEF;" value="id_texto | texto · PK" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="texto-1" parent="texto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#DAEBEF;" value="id_fonte | texto · FK" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="texto-2" parent="texto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="tipo_texto | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="86" as="geometry"/>
+                </mxCell>
+                <mxCell id="texto-3" parent="texto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="ordem_na_fonte | inteiro" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="texto-4" parent="texto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="texto | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="134" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto" parent="1" style="swimlane;startSize=38;horizontal=1;rounded=1;arcSize=8;container=1;collapsible=0;recursiveResize=0;html=0;align=left;spacingLeft=10;fontSize=13;fontStyle=1;fontColor=#FFFFFF;fillColor=#174B58;swimlaneFillColor=#FFFFFF;strokeColor=#6F909C;" value="PONTO_INTERESSE  ·  pontos_interesse.csv" vertex="1">
+                    <mxGeometry height="302" width="355" x="844" y="375" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto-0" parent="ponto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#DAEBEF;" value="id_ponto | texto · PK" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="38" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto-1" parent="ponto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#DAEBEF;" value="id_fonte | texto · FK" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto-2" parent="ponto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="nome | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="86" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto-3" parent="ponto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="tipo_ponto | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto-4" parent="ponto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="ordem_na_fonte | inteiro" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="134" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto-5" parent="ponto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="altitude_m | decimal" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="158" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto-6" parent="ponto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="latitude | decimal" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="182" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto-7" parent="ponto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#FFFFFF;" value="longitude | decimal" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="206" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto-8" parent="ponto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="descricao_publicada | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto-9" parent="ponto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="url_marcador | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="254" as="geometry"/>
+                </mxCell>
+                <mxCell id="ponto-10" parent="ponto" style="text;overflow=hidden;rounded=0;align=left;verticalAlign=middle;spacingLeft=10;strokeColor=none;fontColor=#223746;fontSize=12;fillColor=#F1F6F8;" value="observacao | texto" vertex="1">
+                    <mxGeometry height="24" width="353" x="1" y="278" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel-0" edge="1" parent="1" source="trilha" style="edgeStyle=orthogonalEdgeStyle;rounded=0;startArrow=ERmandOne;endArrow=ERzeroToMany;strokeColor=#285463;strokeWidth=2;exitX=1;exitY=0.45;entryX=0;entryY=0.5;" target="fonte">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel-1" edge="1" parent="1" source="fonte" style="edgeStyle=orthogonalEdgeStyle;rounded=0;startArrow=ERmandOne;endArrow=ERzeroToMany;strokeColor=#285463;strokeWidth=2;exitX=1;exitY=0.24;entryX=0;entryY=0.65;" target="texto">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel-2" edge="1" parent="1" source="fonte" style="edgeStyle=orthogonalEdgeStyle;rounded=0;startArrow=ERmandOne;endArrow=ERzeroToMany;strokeColor=#285463;strokeWidth=2;exitX=1;exitY=0.78;entryX=0;entryY=0.32;" target="ponto">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="notes" parent="1" style="text;strokeColor=none;fillColor=none;align=left;fontSize=13;fontColor=#456072;" value="A fonte principal sustenta a ficha. Textos e pontos identificam a trilha por meio da fonte." vertex="1">
+                    <mxGeometry height="30" width="1150" x="40" y="730" as="geometry"/>
+                </mxCell>
+                <mxCell id="notes-1" parent="1" style="text;strokeColor=none;fillColor=none;align=left;fontSize=13;fontColor=#456072;" value="Wikiloc · “Hora” → tempo total registrado. “Tempo em movimento” é independente e opcional." vertex="1">
+                    <mxGeometry height="30" width="1150" x="40" y="760" as="geometry"/>
+                </mxCell>
+                <mxCell id="notes-2" parent="1" style="text;strokeColor=none;fillColor=none;align=left;fontSize=13;fontColor=#456072;" value="Wikiloc · “Coordenadas” → quantidade de pontos GPS. As latitudes e longitudes exigem geometria ou marcador validado." vertex="1">
+                    <mxGeometry height="30" width="1150" x="40" y="790" as="geometry"/>
+                </mxCell>
+                <mxCell id="notes-3" parent="1" style="text;strokeColor=none;fillColor=none;align=left;fontSize=13;fontColor=#456072;" value="Itinerário · tipo_texto = descricao_itinerario. A ordem dos marcadores preserva a sequência exibida pela fonte." vertex="1">
+                    <mxGeometry height="30" width="1150" x="40" y="820" as="geometry"/>
+                </mxCell>
+                <mxCell id="notes-4" parent="1" style="text;strokeColor=none;fillColor=none;align=left;fontSize=13;fontColor=#456072;" value="Catálogo · mantenha os intervalos oficiais e o tipo de duração. Campos ausentes ficam vazios." vertex="1">
+                    <mxGeometry height="30" width="1150" x="40" y="850" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

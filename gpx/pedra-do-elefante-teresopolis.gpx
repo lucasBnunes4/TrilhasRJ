@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Wikiloc - https://www.wikiloc.com" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Wikiloc - Pedra do Elefante (Teresópolis)</name>
+    <link href="https://www.wikiloc.com/hiking-trails/pedra-do-elefante-teresopolis-18925316">
+      <text>Pedra do Elefante (Teresópolis) - Wikiloc on Wikiloc</text>
+    </link>
+    <time>2017-07-30T20:33:07Z</time>
+  </metadata>
+  <trk>
+    <name>Pedra do Elefante (Teresópolis) - Wikiloc</name>
+    <cmt></cmt>
+    <desc></desc>
+    <trkseg>
+      <trkpt lat="-22.462244" lon="-42.984045">
+        <ele>874.045</ele>
+        <time>2017-07-30T19:27:50Z</time>
+      </trkpt>
+      <trkpt lat="-22.462066" lon="-42.984117">
+        <ele>860.047</ele>
+        <time>2017-07-30T19:27:51Z</time>
+      </trkpt>
+      <trkpt lat="-22.462168" lon="-42.984018">
+        <ele>858.011</ele>
+        <time>2017-07-30T19:27:52Z</time>
+      </trkpt>
+      <trkpt lat="-22.461995" lon="-42.984043">
+        <ele>872.008</ele>
+        <time>2017-07-30T19:27:53Z</time>
+      </trkpt>
+      <trkpt lat="-22.462087" lon="-42.984027">
+        <ele>872.065</ele>
+        <time>2017-07-30T19:27:54Z</time>
+      </trkpt>
+      <trkpt lat="-22.461996" lon="-42.984042">
+        <ele>939.022</ele>
+        <time>2017-07-30T19:28:29Z</time>
+      </trkpt>
+      <trkpt lat="-22.462080" lon="-42.984083">
+        <ele>956.083</ele>
+        <time>2017-07-30T19:29:00Z</time>
+      </trkpt>
+      <trkpt lat="-22.462169" lon="-42.984114">
+        <ele>973.096</ele>
+        <time>2017-07-30T19:29:32Z</time>
+      </trkpt>
+      <trkpt lat="-22.462261" lon="-42.984088">
+        <ele>979.019</ele>
+        <time>2017-07-30T19:30:28Z</time>
+      </trkpt>
+      <trkpt lat="-22.462356" lon="-42.984064">
+        <ele>985.087</ele>
+        <time>2017-07-30T19:30:57Z</time>
+      </trkpt>
+      <trkpt lat="-22.462447" lon="-42.984034">
+        <ele>989.085</ele>
+        <time>2017-07-30T19:31:03Z</time>
+      </trkpt>
+      <trkpt lat="-22.462526" lon="-42.983972">
+        <ele>1000.030</ele>
+        <time>2017-07-30T19:32:01Z</time>
+      </trkpt>
+      <trkpt lat="-22.462602" lon="-42.983913">
+        <ele>1010.084</ele>
+        <time>2017-07-30T19:32:16Z</time>
+      </trkpt>
+      <trkpt lat="-22.462696" lon="-42.983902">
+        <ele>1016.007</ele>
+        <time>2017-07-30T19:33:09Z</time>
+      </trkpt>
+      <trkpt lat="-22.462798" lon="-42.983898">
+        <ele>1020.017</ele>
+        <time>2017-07-30T19:33:29Z</time>
+      </trkpt>
+      <trkpt lat="-22.462892" lon="-42.983884">
+        <ele>1017.008</ele>
+        <time>2017-07-30T19:33:34Z</time>
+      </trkpt>
+      <trkpt lat="-22.462976" lon="-42.983829">
+        <ele>1023.059</ele>
+        <time>2017-07-30T19:34:10Z</time>
+      </trkpt>
+      <trkpt lat="-22.463066" lon="-42.983788">
+        <ele>1021.056</ele>
+        <time>2017-07-30T19:34:41Z</time>
+      </trkpt>
+      <trkpt lat="-22.463158" lon="-42.983748">
+        <ele>1020.067</ele>
+        <time>2017-07-30T19:35:04Z</time>
+      </trkpt>
+      <trkpt lat="-22.463226" lon="-42.983682">
+        <ele>1025.040</ele>
+        <time>2017-07-30T19:35:42Z</time>
+      </trkpt>
+      <trkpt lat="-22.463261" lon="-42.983591">
+        <ele>1029.033</ele>
+        <time>2017-07-30T19:36:04Z</time>
+      </trkpt>
+      <trkpt lat="-22.463287" lon="-42.983497">
+        <ele>1039.081</ele>
+        <time>2017-07-30T19:37:10Z</time>
+      </trkpt>
+      <trkpt lat="-22.463332" lon="-42.983404">
+        <ele>1044.019</ele>
+        <time>2017-07-30T19:37:26Z</time>
+      </trkpt>
+      <trkpt lat="-22.463388" lon="-42.983319">
+        <ele>1051.094</ele>
+        <time>2017-07-30T19:38:51Z</time>
+      </trkpt>
+      <trkpt lat="-22.463440" lon="-42.983238">
+        <ele>1060.092</ele>
+        <time>2017-07-30T19:39:20Z</time>
+      </trkpt>
+      <trkpt lat="-22.463527" lon="-42.983197">
+        <ele>1063.073</ele>
+        <time>2017-07-30T19:40:00Z</time>
+      </trkpt>
+      <trkpt lat="-22.463597" lon="-42.983136">
+        <ele>1076.020</ele>
+        <time>2017-07-30T19:40:45Z</time>
+      </trkpt>
+      <trkpt lat="-22.463653" lon="-42.983057">
+        <ele>1074.008</ele>
+        <time>2017-07-30T19:41:24Z</time>
+      </trkpt>
+      <trkpt lat="-22.463680" lon="-42.982963">
+        <ele>1092.030</ele>
+        <time>2017-07-30T19:41:59Z</time>
+      </trkpt>
+      <trkpt lat="-22.463765" lon="-42.982890">
+        <ele>1091.037</ele>
+        <time>2017-07-30T19:42:19Z</time>
+      </trkpt>
+      <trkpt lat="-22.463858" lon="-42.982854">
+        <ele>1093.098</ele>
+        <time>2017-07-30T19:42:47Z</time>
+      </trkpt>
+      <trkpt lat="-22.463953" lon="-42.982882">
+        <ele>1099.091</ele>
+        <time>2017-07-30T19:42:59Z</time>
+      </trkpt>
+      <trkpt lat="-22.464048" lon="-42.982893">
+        <ele>1102.054</ele>
+        <time>2017-07-30T19:43:10Z</time>
+      </trkpt>
+      <trkpt lat="-22.464140" lon="-42.982886">
+        <ele>1104.032</ele>
+        <time>2017-07-30T19:43:37Z</time>
+      </trkpt>
+      <trkpt lat="-22.464228" lon="-42.982856">
+        <ele>1103.090</ele>
+        <time>2017-07-30T19:43:50Z</time>
+      </trkpt>
+      <trkpt lat="-22.464317" lon="-42.982843">
+        <ele>1113.035</ele>
+        <time>2017-07-30T19:44:16Z</time>
+      </trkpt>
+      <trkpt lat="-22.464402" lon="-42.982781">
+        <ele>1109.086</ele>
+        <time>2017-07-30T19:45:07Z</time>
+      </trkpt>
+      <trkpt lat="-22.464485" lon="-42.982729">
+        <ele>1121.060</ele>
+        <time>2017-07-30T19:45:32Z</time>
+      </trkpt>
+      <trkpt lat="-22.464562" lon="-42.982667">
+        <ele>1114.026</ele>
+        <time>2017-07-30T19:45:57Z</time>
+      </trkpt>
+      <trkpt lat="-22.464650" lon="-42.982627">
+        <ele>1115.008</ele>
+        <time>2017-07-30T19:46:16Z</time>
+      </trkpt>
+      <trkpt lat="-22.464734" lon="-42.982585">
+        <ele>1123.029</ele>
+        <time>2017-07-30T19:46:51Z</time>
+      </trkpt>
+      <trkpt lat="-22.464807" lon="-42.982519">
+        <ele>1129.036</ele>
+        <time>2017-07-30T19:54:02Z</time>
+      </trkpt>
+      <trkpt lat="-22.464877" lon="-42.982446">
+        <ele>1131.047</ele>
+        <time>2017-07-30T19:54:14Z</time>
+      </trkpt>
+      <trkpt lat="-22.464932" lon="-42.982366">
+        <ele>1132.030</ele>
+        <time>2017-07-30T19:54:26Z</time>
+      </trkpt>
+      <trkpt lat="-22.465006" lon="-42.982310">
+        <ele>1131.033</ele>
+        <time>2017-07-30T19:54:41Z</time>
+      </trkpt>
+      <trkpt lat="-22.465075" lon="-42.982247">
+        <ele>1133.021</ele>
+        <time>2017-07-30T19:55:51Z</time>
+      </trkpt>
+      <trkpt lat="-22.465147" lon="-42.982182">
+        <ele>1131.039</ele>
+        <time>2017-07-30T19:57:18Z</time>
+      </trkpt>
+      <trkpt lat="-22.465197" lon="-42.982099">
+        <ele>1131.054</ele>
+        <time>2017-07-30T19:57:35Z</time>
+      </trkpt>
+      <trkpt lat="-22.465261" lon="-42.982007">
+        <ele>1129.039</ele>
+        <time>2017-07-30T19:58:11Z</time>
+      </trkpt>
+      <trkpt lat="-22.465322" lon="-42.981934">
+        <ele>1133.001</ele>
+        <time>2017-07-30T19:58:30Z</time>
+      </trkpt>
+      <trkpt lat="-22.465406" lon="-42.981978">
+        <ele>1140.021</ele>
+        <time>2017-07-30T19:59:04Z</time>
+      </trkpt>
+      <trkpt lat="-22.465485" lon="-42.982034">
+        <ele>1136.008</ele>
+        <time>2017-07-30T19:59:25Z</time>
+      </trkpt>
+      <trkpt lat="-22.465523" lon="-42.982123">
+        <ele>1145.044</ele>
+        <time>2017-07-30T19:59:52Z</time>
+      </trkpt>
+      <trkpt lat="-22.466015" lon="-42.982285">
+        <ele>1157.041</ele>
+        <time>2017-07-30T20:33:07Z</time>
+      </trkpt>
+    </trkseg>
+  </trk></gpx>

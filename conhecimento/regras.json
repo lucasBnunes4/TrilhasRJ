@@ -1,0 +1,2203 @@
+{
+  "versao_base": "0.5.0",
+  "estado": "proposta_para_revisao",
+  "contrato": {
+    "execucao": "O motor inicial executa somente regras revisadas para o piloto, mediante modo experimental explícito. Uso operacional exige validação dos critérios de trilha.",
+    "logica": "Conjunção: falsa domina ausente; todos verdadeiros acionam; ausente sem condição falsa produz não avaliável. Nulo significa indisponível. Lista vazia de atributos só representa ausência após verificação explícita.",
+    "cobertura": "Exigir cobertura integral para totais, picos e demais extremos, salvo regras diagnósticas. A falha de obtenção da fonte é nulo, enquanto 0% descreve janela sem dados em série consultada.",
+    "janelas": "Usar intervalos UTC com interseção de duração positiva. Para chuva horária o carimbo encerra a hora anterior; o pico indica o total da hora inteira. O acumulado do comparador rateia sobreposições assumindo distribuição uniforme dentro da hora.",
+    "espaco": "Preservar localização, resolução, precisão dos trechos e estação representativa. Uma previsão na coordenada de referência recortada pela passagem continua sendo uma previsão de referência. Não atribuir um ponto sem evidência de localização a uma passagem específica.",
+    "comparacao": "Usar a mesma captura para os horários. No experimento caminhada inteira versus trecho, substituir apenas o recorte de pico da regra, quando comparável; manter atributo, limiar e série fixos, e registrar a variante.",
+    "consolidacao": "Maior nível acionado entre atencao, atencao_alta e critico. Diagnósticos e nível informativo não elevam a classificação. Interdição confirmada tem prioridade na apresentação. Exibir regras acionadas, lacunas relevantes e cobertura separadamente. Sem fatores e com lacunas relevantes, avaliação incompleta; sem fatores e com dados suficientes, nenhum fator identificado pelas regras avaliadas.",
+    "rastreabilidade": "Registrar versão da base, ID da regra, valores, unidades, janelas, fontes, evidência de terreno, área e vigência dos avisos e data da captura. Não unir acumulados observados e previstos sem verificar a continuidade e a não sobreposição.",
+    "limiares": "As referências meteorológicas informam a escolha dos limiares de intensidade. Os níveis de atenção e os demais valores quantitativos são critérios experimentais do projeto."
+  },
+  "referencias": {
+    "PREV": {
+      "nome": "Open-Meteo, convenções das variáveis horárias",
+      "url": "https://open-meteo.com/en/docs"
+    },
+    "AVISO": {
+      "nome": "INMET, avisos especiais",
+      "url": "https://portal.inmet.gov.br/servicos/avisos-especiais"
+    },
+    "RIOS": {
+      "nome": "Ministério do Turismo, Turismo Seguro em Ambientes Naturais",
+      "url": "https://www.gov.br/turismo/pt-br/centrais-de-conteudo-/publicacoes/consumidor-turista/consumidor-turista-no-5-turismo-seguro-em-ambientes-naturais.pdf"
+    },
+    "PNT": {
+      "nome": "ICMBio, Plano de Manejo do Parque Nacional da Tijuca",
+      "url": "https://www.gov.br/icmbio/pt-br/assuntos/biodiversidade/unidade-de-conservacao/unidades-de-biomas/mata-atlantica/lista-de-ucs/parna-da-tijuca/arquivos/parna_tijuca_pm.pdf"
+    },
+    "PLANO": {
+      "nome": "Planejamento Trilhas RJ",
+      "url": "https://chatgpt.com/library?file_id=libfile_b0a71fd1cf788191a0b37df11ccce7bd&account_id=personal"
+    },
+    "ALERTA_RIO_INTENSIDADE": {
+      "nome": "Alerta Rio, Termos Meteorológicos",
+      "url": "https://www.sistema-alerta-rio.com.br/previsao-do-tempo/termosmet/"
+    },
+    "CDC_FRIO": {
+      "nome": "CDC · Reconhecimento de hipotermia",
+      "url": "https://www.cdc.gov/natural-disasters/psa-toolkit/recognizing-hypothermia.html"
+    },
+    "CDC_AGUA": {
+      "nome": "CDC · Exposição a água fria",
+      "url": "https://www.cdc.gov/natural-disasters/psa-toolkit/treating-hypothermia.html"
+    },
+    "CDC_CALOR": {
+      "nome": "CDC · Calor e atividade física",
+      "url": "https://www.cdc.gov/extreme-heat/risk-factors/extreme-heat-and-athletes.html"
+    },
+    "NWS_RAIOS": {
+      "nome": "NWS · Proteção contra raios",
+      "url": "https://www.weather.gov/safety/lightning-tips"
+    },
+    "OMS_UV": {
+      "nome": "OMS · Índice UV e proteção solar",
+      "url": "https://www.who.int/news-room/questions-and-answers/item/radiation-the-ultraviolet-(uv)-index"
+    },
+    "CBM_CHEIA": {
+      "nome": "Corpo de Bombeiros · Cabeça d’água",
+      "url": "https://www.comunicacao.pr.gov.br/external-print/pdf/node/aen/adaf01f6-2ba7-4cd1-9434-a906f6704132"
+    }
+  },
+  "fatos": {
+    "pico_caminhada": {
+      "unidade": "mm por hora amostrada",
+      "descricao": "Maior total de uma hora que sobrepõe a caminhada. Usar pico_horario_na_cobertura_disponivel.chuva_mm de cenarios[*].",
+      "disponibilidade": "piloto"
+    },
+    "chuva_caminhada": {
+      "unidade": "mm",
+      "descricao": "Total proporcional à sobreposição durante a caminhada, com cobertura integral. Usar chuva_prevista_estimada_mm de cenarios[*].",
+      "disponibilidade": "piloto"
+    },
+    "pico_trecho": {
+      "unidade": "mm por hora amostrada",
+      "descricao": "Maior total de uma hora que se sobrepõe à passagem do trecho documentado. Usar trecho.previsao.pico_horario_na_cobertura_disponivel.chuva_mm.",
+      "disponibilidade": "piloto"
+    },
+    "chuva_24h_prevista": {
+      "unidade": "mm",
+      "descricao": "Total de previsao_24h_antes_da_saida, exatamente 24 h anteriores à saída e cobertura integral.",
+      "disponibilidade": "piloto"
+    },
+    "chuva_24h_observada": {
+      "unidade": "mm",
+      "descricao": "Usar chuva_observada_24h.acumulado_mm quando estado=disponivel e cobertura integral confirmada. Preservar a janela efetiva da estação e informar a idade da leitura.",
+      "disponibilidade": "piloto"
+    },
+    "idade_observacao_na_saida": {
+      "unidade": "h",
+      "descricao": "Diferença entre a saída e o fim da janela observada. Futuro da observação deve ser tratado como indisponível.",
+      "disponibilidade": "piloto"
+    },
+    "atributos_trecho": {
+      "unidade": "lista",
+      "descricao": "Atributos localizados com evidência identificável e passagem estimável. Evidência atualmente documentada para a escadaria piloto; a ingestão estruturada é necessária.",
+      "disponibilidade": "piloto"
+    },
+    "cobertura_caminhada": {
+      "unidade": "%",
+      "descricao": "Percentual retornado no cenário, incluindo 0 se a fonte consultada não cobrir a caminhada.",
+      "disponibilidade": "piloto"
+    },
+    "cobertura_trecho": {
+      "unidade": "%",
+      "descricao": "Percentual de cobertura da previsão retornado para o trecho.",
+      "disponibilidade": "piloto"
+    },
+    "distancia_passagem": {
+      "unidade": "km",
+      "descricao": "Distância acumulada do trecho, com identificação de ida ou volta.",
+      "disponibilidade": "piloto"
+    },
+    "nivel_tempestade_oficial": {
+      "unidade": "categoria",
+      "descricao": "Maior nível oficial entre avisos de tempestade que intersectam simultaneamente o GPX e a caminhada. Normalizar como potencial, perigo ou grande_perigo. Sem aviso só com consulta de cobertura confirmada; se não, usar nulo.",
+      "disponibilidade": "requer_integracao"
+    },
+    "nivel_chuva_oficial": {
+      "unidade": "categoria",
+      "descricao": "Idem para aviso de chuvas intensas.",
+      "disponibilidade": "requer_integracao"
+    },
+    "nivel_vento_oficial": {
+      "unidade": "categoria",
+      "descricao": "Idem para aviso de vento.",
+      "disponibilidade": "requer_integracao"
+    },
+    "interdicao_confirmada": {
+      "unidade": "booleano",
+      "descricao": "Comunicado vigente do órgão gestor que abrange a trilha ou acesso indispensável. Ausência só quando a fonte consultada permitir confirmação.",
+      "disponibilidade": "requer_integracao"
+    },
+    "pico_montante": {
+      "unidade": "mm por hora amostrada",
+      "descricao": "Maior acumulado horário previsto na bacia a montante da travessia, em células da bacia contribuinte, nas 6 h anteriores à passagem até seu término, com cobertura espacial e temporal validada.",
+      "disponibilidade": "requer_integracao"
+    },
+    "temp_min": {
+      "unidade": "°C",
+      "descricao": "Mínima da temperatura prevista no intervalo da caminhada.",
+      "disponibilidade": "piloto"
+    },
+    "queda_2h": {
+      "unidade": "°C",
+      "descricao": "Maior diferença T(t)-T(t+2h) dentro da caminhada. Aplicável apenas se a caminhada durar pelo menos 2 h.",
+      "disponibilidade": "piloto"
+    },
+    "sensacao_min": {
+      "unidade": "°C",
+      "descricao": "Mínima prevista de apparent_temperature durante a caminhada.",
+      "disponibilidade": "piloto"
+    },
+    "sensacao_max": {
+      "unidade": "°C",
+      "descricao": "Máxima prevista de apparent_temperature durante a caminhada.",
+      "disponibilidade": "piloto"
+    },
+    "rajada_trecho": {
+      "unidade": "km/h",
+      "descricao": "Maior rajada horária que se sobrepõe à passagem pelo trecho, conforme a convenção da fonte.",
+      "disponibilidade": "piloto"
+    },
+    "visibilidade_trecho": {
+      "unidade": "m",
+      "descricao": "Menor visibilidade prevista durante a passagem, com amostragem espacial e temporal declaradas.",
+      "disponibilidade": "piloto"
+    },
+    "minutos_pos_por_do_sol": {
+      "unidade": "min",
+      "descricao": "Maior entre zero e minutos entre o pôr do sol local e o retorno estimado para a caminhada diurna.",
+      "disponibilidade": "piloto"
+    },
+    "pico_trecho_duracao_alternativa": {
+      "unidade": "mm por hora amostrada",
+      "descricao": "Pico horário de precipitação no trajeto estimado após recalcular a passagem com duração 20% menor ou maior. Usar o maior pico das duas alternativas com cobertura integral.",
+      "disponibilidade": "requer_integracao"
+    },
+    "rajada_max": {
+      "unidade": "km/h",
+      "descricao": "Rajada elevada no percurso na célula de referência durante a caminhada.",
+      "disponibilidade": "piloto"
+    },
+    "visibilidade_min": {
+      "unidade": "m",
+      "descricao": "Visibilidade reduzida no percurso na célula de referência durante a caminhada.",
+      "disponibilidade": "piloto"
+    },
+    "frio_com_chuva": {
+      "unidade": "booleano",
+      "descricao": "Sensação térmica de até 8 °C e chuva amostrada de pelo menos 1 mm na mesma hora que coincide com a janela.",
+      "disponibilidade": "piloto"
+    },
+    "frio_com_vento": {
+      "unidade": "booleano",
+      "descricao": "Sensação térmica de até 8 °C e rajada amostrada de pelo menos 40 km/h na mesma hora que coincide com a janela.",
+      "disponibilidade": "piloto"
+    },
+    "temp_max": {
+      "unidade": "°C",
+      "descricao": "Temperatura máxima prevista na janela.",
+      "disponibilidade": "piloto"
+    },
+    "uv_max": {
+      "unidade": "índice",
+      "descricao": "Maior índice UV horário que coincide com a janela.",
+      "disponibilidade": "piloto"
+    },
+    "tempestade_prevista": {
+      "unidade": "booleano",
+      "descricao": "Detecção de código WMO horário 95, 96, 97 ou 99 dentro da janela.",
+      "disponibilidade": "piloto"
+    },
+    "granizo_previsto": {
+      "unidade": "booleano",
+      "descricao": "Detecção de código WMO horário 96 ou 99 dentro da janela.",
+      "disponibilidade": "piloto"
+    },
+    "duracao_min": {
+      "unidade": "min",
+      "descricao": "Duração planejada da caminhada.",
+      "disponibilidade": "piloto"
+    },
+    "saida_antes_do_nascer": {
+      "unidade": "booleano",
+      "descricao": "Saída anterior ao nascer do sol da data local.",
+      "disponibilidade": "piloto"
+    },
+    "saida_apos_por_do_sol": {
+      "unidade": "booleano",
+      "descricao": "Saída no horário do pôr do sol ou depois dele.",
+      "disponibilidade": "piloto"
+    },
+    "margem_luz_min": {
+      "unidade": "min",
+      "descricao": "Minutos do retorno estimado até o pôr do sol para saída diurna. Valor negativo indica retorno após o pôr do sol.",
+      "disponibilidade": "piloto"
+    }
+  },
+  "regras": [
+    {
+      "id": "CH01",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Pico horário de chuva",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "pico_caminhada"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "pico_caminhada",
+            "operador": ">=",
+            "valor": 5,
+            "unidade": "mm por hora amostrada"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "Há uma hora com chuva prevista acima ou igual ao limiar do piloto durante a caminhada.",
+      "referencias": [
+        "PREV",
+        "ALERTA_RIO_INTENSIDADE"
+      ],
+      "justificativa": "Usa o início da faixa moderada do Alerta Rio como corte experimental inclusivo.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "CH02",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Pico horário de maior intensidade",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "pico_caminhada"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "pico_caminhada",
+            "operador": ">=",
+            "valor": 25,
+            "unidade": "mm por hora amostrada"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "O percurso coincide com um pico horário de chuva na faixa alta do piloto.",
+      "referencias": [
+        "PREV",
+        "ALERTA_RIO_INTENSIDADE"
+      ],
+      "justificativa": "Usa o limite superior da faixa moderada do Alerta Rio como corte experimental inclusivo.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "CH03",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Chuva acumulada durante a caminhada",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "chuva_caminhada"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "chuva_caminhada",
+            "operador": ">=",
+            "valor": 10,
+            "unidade": "mm"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "O acumulado previsto durante a caminhada atingiu o limiar do piloto.",
+      "referencias": [
+        "PREV"
+      ],
+      "justificativa": "Conservado para comparação experimental. O total por janela e a proximidade temporal da estação precisam de calibração local antes de uso operacional.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "CH04",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Chuva prevista nas 24 h anteriores",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "chuva_24h_prevista"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "chuva_24h_prevista",
+            "operador": ">=",
+            "valor": 20,
+            "unidade": "mm"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "O acumulado previsto nas 24 horas imediatamente anteriores à partida atingiu o limiar do piloto.",
+      "referencias": [
+        "PREV"
+      ],
+      "justificativa": "Conservado para comparação experimental. O total por janela e a proximidade temporal da estação precisam de calibração local antes de uso operacional.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "CH05",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Chuva observada antes de saída próxima",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "chuva_24h_observada",
+        "idade_observacao_na_saida"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "chuva_24h_observada",
+            "operador": ">=",
+            "valor": 20,
+            "unidade": "mm"
+          },
+          {
+            "fato": "idade_observacao_na_saida",
+            "operador": "<=",
+            "valor": 6,
+            "unidade": "h"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "A estação registrou chuva antecedente no patamar do piloto e sua janela termina até seis horas antes da saída.",
+      "referencias": [
+        "PLANO"
+      ],
+      "justificativa": "Conservado para comparação experimental. O total por janela e a proximidade temporal da estação precisam de calibração local antes de uso operacional.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TR01",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Chuva na passagem por escadaria",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "atributos_trecho",
+        "pico_trecho"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "escadaria"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "pico_trecho",
+            "operador": ">=",
+            "valor": 5,
+            "unidade": "mm por hora amostrada"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "A passagem estimada pela escadaria coincide com uma hora de chuva prevista no patamar do piloto.",
+      "referencias": [
+        "PREV",
+        "PNT",
+        "ALERTA_RIO_INTENSIDADE"
+      ],
+      "justificativa": "Usa o início da faixa moderada do Alerta Rio como corte experimental inclusivo.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TR02",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Pico de chuva na passagem por escadaria",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "atributos_trecho",
+        "pico_trecho"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "escadaria"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "pico_trecho",
+            "operador": ">=",
+            "valor": 25,
+            "unidade": "mm por hora amostrada"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "O pico previsto coincide com a passagem estimada pela escadaria.",
+      "referencias": [
+        "PREV",
+        "PNT",
+        "ALERTA_RIO_INTENSIDADE"
+      ],
+      "justificativa": "Usa o limite superior da faixa moderada do Alerta Rio como corte experimental inclusivo.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TR03",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Chuva antecedente e superfície exposta",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "atributos_trecho",
+        "chuva_24h_prevista"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "escadaria",
+              "rocha_lisa",
+              "solo_argiloso"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "chuva_24h_prevista",
+            "operador": ">=",
+            "valor": 20,
+            "unidade": "mm"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "Chuva antecedente prevista e superfície documentada justificam conferir as condições de piso.",
+      "referencias": [
+        "PREV",
+        "PLANO"
+      ],
+      "justificativa": "Mantém 20 mm como corte experimental de comparação, sujeito a calibração por terreno e janela.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TR04",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Chuva durante descida em piso sensível",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "atributos_trecho",
+        "pico_trecho"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "descida_ingreme"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "rocha_lisa",
+              "solo_argiloso",
+              "escadaria"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "pico_trecho",
+            "operador": ">=",
+            "valor": 5,
+            "unidade": "mm por hora amostrada"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "A passagem em descida com piso sensível coincide com chuva prevista.",
+      "referencias": [
+        "PREV",
+        "PLANO"
+      ],
+      "justificativa": "Critério experimental para revisão e testes. Os limiares numéricos são internos ao projeto; as referências descrevem o dado ou fenômeno.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "depende_de_evidencia_georreferenciada"
+    },
+    {
+      "id": "TR05",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Chuva coincidente com travessia",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "atributos_trecho",
+        "pico_trecho"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "travessia_curso_dagua"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "pico_trecho",
+            "operador": ">=",
+            "valor": 10,
+            "unidade": "mm por hora amostrada"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Há chuva relevante na janela da travessia. A previsão local descreve a chuva e o nível do curso d’água requer confirmação local.",
+      "referencias": [
+        "RIOS",
+        "PREV"
+      ],
+      "justificativa": "Critério experimental para revisão e testes. Os limiares numéricos são internos ao projeto; as referências descrevem o dado ou fenômeno.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "depende_de_evidencia_georreferenciada"
+    },
+    {
+      "id": "TR06",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Chuva prevista a montante",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "atributos_trecho",
+        "pico_montante"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "travessia_curso_dagua",
+              "area_de_cachoeira"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "pico_montante",
+            "operador": ">=",
+            "valor": 10,
+            "unidade": "mm por hora amostrada"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Há pico previsto a montante próximo da passagem. Verifique as condições do curso d’água e os avisos do gestor.",
+      "referencias": [
+        "RIOS",
+        "PREV"
+      ],
+      "justificativa": "Critério experimental para revisão e testes. Os limiares numéricos são internos ao projeto; as referências descrevem o dado ou fenômeno.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "depende_de_evidencia_georreferenciada"
+    },
+    {
+      "id": "TR07",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Chuva observada e terreno sensível",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "atributos_trecho",
+        "chuva_24h_observada",
+        "idade_observacao_na_saida"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "escadaria",
+              "rocha_lisa",
+              "solo_argiloso"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "chuva_24h_observada",
+            "operador": ">=",
+            "valor": 20,
+            "unidade": "mm"
+          },
+          {
+            "fato": "idade_observacao_na_saida",
+            "operador": "<=",
+            "valor": 6,
+            "unidade": "h"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "Chuva registrada na estação de referência antecede a passagem por superfície sensível. A umidade do piso deve ser verificada no local.",
+      "referencias": [
+        "PLANO"
+      ],
+      "justificativa": "Mantém 20 mm como corte experimental de comparação, sujeito a calibração por terreno e janela.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TR08",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Coincidência sensível à duração da caminhada",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "pico_trecho",
+        "pico_trecho_duracao_alternativa"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "pico_trecho",
+            "operador": "<",
+            "valor": 5,
+            "unidade": "mm por hora amostrada"
+          },
+          {
+            "fato": "pico_trecho_duracao_alternativa",
+            "operador": ">=",
+            "valor": 5,
+            "unidade": "mm por hora amostrada"
+          }
+        ]
+      },
+      "nivel": "informativo",
+      "mensagem": "Variar a duração estimada em 20% muda a coincidência da passagem com o pico previsto.",
+      "referencias": [
+        "PLANO"
+      ],
+      "justificativa": "Critério experimental para revisão e testes. Os limiares numéricos são internos ao projeto; as referências descrevem o dado ou fenômeno.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "depende_de_evidencia_georreferenciada"
+    },
+    {
+      "id": "AT01",
+      "versao": "1.0",
+      "estado_revisao": "proposta",
+      "fenomeno": "Aviso oficial de tempestade: potencial",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "nivel_tempestade_oficial"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "nivel_tempestade_oficial",
+            "operador": "==",
+            "valor": "potencial",
+            "unidade": "categoria"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "Aviso oficial de tempestade (potencial) intersecta a trilha durante a caminhada. Mostrar órgão, vigência, área e orientação do aviso.",
+      "referencias": [
+        "AVISO"
+      ],
+      "justificativa": "Regra categórica baseada na evidência ou no evento informado.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "requer_integracao"
+    },
+    {
+      "id": "AT02",
+      "versao": "1.0",
+      "estado_revisao": "proposta",
+      "fenomeno": "Aviso oficial de tempestade: perigo",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "nivel_tempestade_oficial"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "nivel_tempestade_oficial",
+            "operador": "==",
+            "valor": "perigo",
+            "unidade": "categoria"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Aviso oficial de tempestade (perigo) intersecta a trilha durante a caminhada. Mostrar órgão, vigência, área e orientação do aviso.",
+      "referencias": [
+        "AVISO"
+      ],
+      "justificativa": "Regra categórica baseada na evidência ou no evento informado.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "requer_integracao"
+    },
+    {
+      "id": "AT03",
+      "versao": "1.0",
+      "estado_revisao": "proposta",
+      "fenomeno": "Aviso oficial de tempestade: grande_perigo",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "nivel_tempestade_oficial"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "nivel_tempestade_oficial",
+            "operador": "==",
+            "valor": "grande_perigo",
+            "unidade": "categoria"
+          }
+        ]
+      },
+      "nivel": "critico",
+      "mensagem": "Aviso oficial de tempestade (grande_perigo) intersecta a trilha durante a caminhada. Mostrar órgão, vigência, área e orientação do aviso.",
+      "referencias": [
+        "AVISO"
+      ],
+      "justificativa": "Regra categórica baseada na evidência ou no evento informado.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "requer_integracao"
+    },
+    {
+      "id": "AC01",
+      "versao": "1.0",
+      "estado_revisao": "proposta",
+      "fenomeno": "Aviso oficial de chuvas intensas: potencial",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "nivel_chuva_oficial"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "nivel_chuva_oficial",
+            "operador": "==",
+            "valor": "potencial",
+            "unidade": "categoria"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "Aviso oficial de chuvas intensas (potencial) intersecta a trilha durante a caminhada. Mostrar órgão, vigência, área e orientação do aviso.",
+      "referencias": [
+        "AVISO"
+      ],
+      "justificativa": "Regra categórica baseada na evidência ou no evento informado.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "requer_integracao"
+    },
+    {
+      "id": "AC02",
+      "versao": "1.0",
+      "estado_revisao": "proposta",
+      "fenomeno": "Aviso oficial de chuvas intensas: perigo",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "nivel_chuva_oficial"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "nivel_chuva_oficial",
+            "operador": "==",
+            "valor": "perigo",
+            "unidade": "categoria"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Aviso oficial de chuvas intensas (perigo) intersecta a trilha durante a caminhada. Mostrar órgão, vigência, área e orientação do aviso.",
+      "referencias": [
+        "AVISO"
+      ],
+      "justificativa": "Regra categórica baseada na evidência ou no evento informado.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "requer_integracao"
+    },
+    {
+      "id": "AC03",
+      "versao": "1.0",
+      "estado_revisao": "proposta",
+      "fenomeno": "Aviso oficial de chuvas intensas: grande_perigo",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "nivel_chuva_oficial"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "nivel_chuva_oficial",
+            "operador": "==",
+            "valor": "grande_perigo",
+            "unidade": "categoria"
+          }
+        ]
+      },
+      "nivel": "critico",
+      "mensagem": "Aviso oficial de chuvas intensas (grande_perigo) intersecta a trilha durante a caminhada. Mostrar órgão, vigência, área e orientação do aviso.",
+      "referencias": [
+        "AVISO"
+      ],
+      "justificativa": "Regra categórica baseada na evidência ou no evento informado.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "requer_integracao"
+    },
+    {
+      "id": "AV01",
+      "versao": "1.0",
+      "estado_revisao": "proposta",
+      "fenomeno": "Aviso oficial de vento: potencial",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "nivel_vento_oficial"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "nivel_vento_oficial",
+            "operador": "==",
+            "valor": "potencial",
+            "unidade": "categoria"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "Aviso oficial de vento (potencial) intersecta a trilha durante a caminhada. Mostrar órgão, vigência, área e orientação do aviso.",
+      "referencias": [
+        "AVISO"
+      ],
+      "justificativa": "Regra categórica baseada na evidência ou no evento informado.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "requer_integracao"
+    },
+    {
+      "id": "AV02",
+      "versao": "1.0",
+      "estado_revisao": "proposta",
+      "fenomeno": "Aviso oficial de vento: perigo",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "nivel_vento_oficial"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "nivel_vento_oficial",
+            "operador": "==",
+            "valor": "perigo",
+            "unidade": "categoria"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Aviso oficial de vento (perigo) intersecta a trilha durante a caminhada. Mostrar órgão, vigência, área e orientação do aviso.",
+      "referencias": [
+        "AVISO"
+      ],
+      "justificativa": "Regra categórica baseada na evidência ou no evento informado.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "requer_integracao"
+    },
+    {
+      "id": "AV03",
+      "versao": "1.0",
+      "estado_revisao": "proposta",
+      "fenomeno": "Aviso oficial de vento: grande_perigo",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "nivel_vento_oficial"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "nivel_vento_oficial",
+            "operador": "==",
+            "valor": "grande_perigo",
+            "unidade": "categoria"
+          }
+        ]
+      },
+      "nivel": "critico",
+      "mensagem": "Aviso oficial de vento (grande_perigo) intersecta a trilha durante a caminhada. Mostrar órgão, vigência, área e orientação do aviso.",
+      "referencias": [
+        "AVISO"
+      ],
+      "justificativa": "Regra categórica baseada na evidência ou no evento informado.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "requer_integracao"
+    },
+    {
+      "id": "AT04",
+      "versao": "1.0",
+      "estado_revisao": "proposta",
+      "fenomeno": "Tempestade e exposição do trecho",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "nivel_tempestade_oficial",
+        "atributos_trecho"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "nivel_tempestade_oficial",
+            "operador": "em",
+            "valor": [
+              "potencial",
+              "perigo",
+              "grande_perigo"
+            ],
+            "unidade": "categoria"
+          },
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "crista_exposta",
+              "cume_exposto",
+              "laje_exposta"
+            ],
+            "unidade": "lista"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Há aviso de tempestade no percurso e um trecho com exposição documentada. Informar a vigência e a geometria do aviso; a coincidência específica no trecho requer cruzamento próprio.",
+      "referencias": [
+        "AVISO"
+      ],
+      "justificativa": "Regra categórica baseada na evidência ou no evento informado.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "requer_integracao"
+    },
+    {
+      "id": "TE01",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Queda prevista de temperatura",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "queda_2h"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "queda_2h",
+            "operador": ">=",
+            "valor": 6,
+            "unidade": "°C"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "A previsão indica queda de pelo menos 6 °C em duas horas durante a caminhada.",
+      "referencias": [
+        "PREV"
+      ],
+      "justificativa": "Critério experimental para revisão e testes. Os limiares numéricos são internos ao projeto; as referências descrevem o dado ou fenômeno.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TE02",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Temperatura mínima baixa",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "temp_min"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "temp_min",
+            "operador": "<=",
+            "valor": 10,
+            "unidade": "°C"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "A previsão atinge a faixa baixa de temperatura definida para o piloto.",
+      "referencias": [
+        "PREV"
+      ],
+      "justificativa": "Critério experimental para revisão e testes. Os limiares numéricos são internos ao projeto; as referências descrevem o dado ou fenômeno.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TE03",
+      "versao": "1.2",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Frio e chuva na mesma hora",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "frio_com_chuva"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "frio_com_chuva",
+            "operador": "==",
+            "valor": true,
+            "unidade": "booleano"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Frio e chuva previstos coincidem em uma hora durante a caminhada.",
+      "referencias": [
+        "PREV",
+        "CDC_FRIO"
+      ],
+      "justificativa": "Exige coincidência horária para reduzir alertas causados por condições em horários distintos.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto",
+      "conselho": "Agasalhe-se em camadas e leve proteção impermeável e uma muda seca. Se houver confusão ou fala arrastada após exposição ao frio, interrompa a caminhada e acione socorro."
+    },
+    {
+      "id": "TE04",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Sensação térmica elevada",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "sensacao_max"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "sensacao_max",
+            "operador": ">=",
+            "valor": 35,
+            "unidade": "°C"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "A sensação térmica prevista atinge a faixa alta do piloto durante a caminhada.",
+      "referencias": [
+        "PREV"
+      ],
+      "justificativa": "Critério experimental para revisão e testes. Os limiares numéricos são internos ao projeto; as referências descrevem o dado ou fenômeno.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "VE01",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Rajadas em trecho exposto",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "atributos_trecho",
+        "rajada_trecho"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "crista_exposta",
+              "cume_exposto",
+              "laje_exposta"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "rajada_trecho",
+            "operador": ">=",
+            "valor": 50,
+            "unidade": "km/h"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Rajadas previstas no patamar do piloto coincidem com a passagem estimada por trecho exposto.",
+      "referencias": [
+        "PREV"
+      ],
+      "justificativa": "Critério experimental para revisão e testes. Os limiares numéricos são internos ao projeto; as referências descrevem o dado ou fenômeno.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "VE02",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Baixa visibilidade e navegação sensível",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "atributos_trecho",
+        "visibilidade_trecho"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "navegacao_dificil",
+              "crista_exposta",
+              "cume_exposto"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "visibilidade_trecho",
+            "operador": "<=",
+            "valor": 500,
+            "unidade": "m"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "A previsão indica visibilidade reduzida durante a passagem por trecho exposto ou de navegação difícil.",
+      "referencias": [
+        "PREV"
+      ],
+      "justificativa": "Critério experimental para revisão e testes. Os limiares numéricos são internos ao projeto; as referências descrevem o dado ou fenômeno.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "OP01",
+      "versao": "1.0",
+      "estado_revisao": "proposta",
+      "fenomeno": "Interdição oficial aplicável",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "interdicao_confirmada"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "interdicao_confirmada",
+            "operador": "==",
+            "valor": true,
+            "unidade": "booleano"
+          }
+        ]
+      },
+      "nivel": "critico",
+      "mensagem": "Há interdição confirmada para a trilha ou acesso indispensável. Exibir vigência, motivo e autoridade responsável.",
+      "referencias": [
+        "PLANO"
+      ],
+      "justificativa": "A restrição depende de comunicado vigente do gestor da unidade e prevalece na apresentação.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "requer_integracao"
+    },
+    {
+      "id": "OP02",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Retorno após o pôr do sol",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "minutos_pos_por_do_sol"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "minutos_pos_por_do_sol",
+            "operador": ">",
+            "valor": 0,
+            "unidade": "min"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "O retorno estimado ocorre após o pôr do sol local.",
+      "referencias": [
+        "PLANO"
+      ],
+      "justificativa": "Comparação direta entre horário de retorno e referência astronômica, para caminhadas diurnas.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "DQ01",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Previsão parcial na caminhada",
+      "escopo": "diagnostico",
+      "entradas_exigidas": [
+        "cobertura_caminhada"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "cobertura_caminhada",
+            "operador": ">",
+            "valor": 0,
+            "unidade": "%"
+          },
+          {
+            "fato": "cobertura_caminhada",
+            "operador": "<",
+            "valor": 100,
+            "unidade": "%"
+          }
+        ]
+      },
+      "nivel": "informativo",
+      "mensagem": "Há lacunas de previsão na caminhada. Indicar os intervalos sem dados.",
+      "referencias": [
+        "PLANO"
+      ],
+      "justificativa": "Diagnóstico de completude do cenário.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "DQ02",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Caminhada fora da série disponível",
+      "escopo": "diagnostico",
+      "entradas_exigidas": [
+        "cobertura_caminhada"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "cobertura_caminhada",
+            "operador": "==",
+            "valor": 0,
+            "unidade": "%"
+          }
+        ]
+      },
+      "nivel": "informativo",
+      "mensagem": "Nenhum intervalo da caminhada tem cobertura na série consultada.",
+      "referencias": [
+        "PLANO"
+      ],
+      "justificativa": "Regra categórica baseada na evidência ou no evento informado.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "DQ03",
+      "versao": "1.1",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Cobertura insuficiente no trecho",
+      "escopo": "diagnostico",
+      "entradas_exigidas": [
+        "cobertura_trecho"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "cobertura_trecho",
+            "operador": "<",
+            "valor": 100,
+            "unidade": "%"
+          }
+        ]
+      },
+      "nivel": "informativo",
+      "mensagem": "A previsão cobre apenas parte da janela estimada do trecho, ou nenhuma hora dela.",
+      "referencias": [
+        "PLANO"
+      ],
+      "justificativa": "Diagnóstico de completude para avaliação localizada.",
+      "indisponibilidade": "Se faltar uma entrada e nenhuma condição conhecida for falsa, retornar não avaliável com o fato ausente e sua causa. Aplicar os requisitos de qualidade do fato.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "VE03",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "escopo": "caminhada",
+      "nivel": "atencao",
+      "fenomeno": "Rajada elevada no percurso",
+      "entradas_exigidas": [
+        "rajada_max"
+      ],
+      "referencias": [
+        "PREV"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "rajada_max",
+            "operador": ">=",
+            "valor": 50,
+            "unidade": "km/h"
+          }
+        ]
+      },
+      "mensagem": "Rajada elevada no percurso nas condições previstas para a coordenada de referência.",
+      "justificativa": "Limiar experimental de percurso, sem atribuição a um trecho específico.",
+      "indisponibilidade": "Exige cobertura integral da variável na caminhada.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "VE04",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "escopo": "caminhada",
+      "nivel": "atencao",
+      "fenomeno": "Visibilidade reduzida no percurso",
+      "entradas_exigidas": [
+        "visibilidade_min"
+      ],
+      "referencias": [
+        "PREV"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "visibilidade_min",
+            "operador": "<=",
+            "valor": 500,
+            "unidade": "m"
+          }
+        ]
+      },
+      "mensagem": "Visibilidade reduzida no percurso nas condições previstas para a coordenada de referência.",
+      "justificativa": "Limiar experimental de percurso, sem atribuição a um trecho específico.",
+      "indisponibilidade": "Exige cobertura integral da variável na caminhada.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TE05",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Frio em travessia com imersão",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "atributos_trecho",
+        "sensacao_min"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "travessia_com_imersao"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "sensacao_min",
+            "operador": "<=",
+            "valor": 8,
+            "unidade": "°C"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Frio em travessia com imersão.",
+      "conselho": "Prefira um percurso que evite entrar na água. Leve camadas de isolamento e roupa seca protegida da água.",
+      "referencias": [
+        "CDC_AGUA"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TE06",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Frio com vento na mesma hora",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "frio_com_vento"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "frio_com_vento",
+            "operador": "==",
+            "valor": true,
+            "unidade": "booleano"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Frio com vento na mesma hora.",
+      "conselho": "Agasalhe-se em camadas e leve proteção impermeável e uma muda seca. Se houver confusão ou fala arrastada após exposição ao frio, interrompa a caminhada e acione socorro.",
+      "referencias": [
+        "PREV",
+        "CDC_FRIO"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TE07",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Sensação térmica muito elevada",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "sensacao_max"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "sensacao_max",
+            "operador": ">=",
+            "valor": 40,
+            "unidade": "°C"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Sensação térmica muito elevada.",
+      "conselho": "Adie a saída para um horário mais fresco. Prefira um horário mais fresco. Leve água, beba regularmente e planeje pausas à sombra.",
+      "referencias": [
+        "CDC_CALOR"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TE08",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Caminhada prolongada em condições de calor",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "sensacao_max",
+        "duracao_min"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "sensacao_max",
+            "operador": ">=",
+            "valor": 35,
+            "unidade": "°C"
+          },
+          {
+            "fato": "duracao_min",
+            "operador": ">=",
+            "valor": 120,
+            "unidade": "min"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "Caminhada prolongada em condições de calor.",
+      "conselho": "Prefira um horário mais fresco. Leve água, beba regularmente e planeje pausas à sombra.",
+      "referencias": [
+        "CDC_CALOR"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TE09",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Calor em trecho exposto ou de subida",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "sensacao_max",
+        "atributos_trecho"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "sensacao_max",
+            "operador": ">=",
+            "valor": 35,
+            "unidade": "°C"
+          },
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "exposto_ao_sol",
+              "subida_ingreme"
+            ],
+            "unidade": "lista"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Calor em trecho exposto ou de subida.",
+      "conselho": "Evite que a subida ou o trecho exposto coincida com o pico de calor. Prefira um horário mais fresco. Leve água, beba regularmente e planeje pausas à sombra.",
+      "referencias": [
+        "CDC_CALOR"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TE10",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Temperatura do ar muito baixa",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "temp_min"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "temp_min",
+            "operador": "<=",
+            "valor": 5,
+            "unidade": "°C"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Temperatura do ar muito baixa.",
+      "conselho": "Agasalhe-se em camadas e leve proteção impermeável e uma muda seca. Se houver confusão ou fala arrastada após exposição ao frio, interrompa a caminhada e acione socorro.",
+      "referencias": [
+        "CDC_FRIO"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TE11",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Temperatura do ar elevada",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "temp_max"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "temp_max",
+            "operador": ">=",
+            "valor": 35,
+            "unidade": "°C"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "Temperatura do ar elevada.",
+      "conselho": "Prefira um horário mais fresco. Leve água, beba regularmente e planeje pausas à sombra.",
+      "referencias": [
+        "CDC_CALOR"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "SO01",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Exposição solar com índice UV elevado",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "uv_max"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "uv_max",
+            "operador": ">=",
+            "valor": 3,
+            "unidade": "índice"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "Exposição solar com índice UV elevado.",
+      "conselho": "Use protetor solar, chapéu e óculos com proteção UV. Reaplique o protetor conforme as instruções do produto.",
+      "referencias": [
+        "OMS_UV",
+        "PREV"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "SO02",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Índice UV muito alto",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "uv_max"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "uv_max",
+            "operador": ">=",
+            "valor": 8,
+            "unidade": "índice"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Índice UV muito alto.",
+      "conselho": "Evite o horário de maior radiação e procure sombra nas pausas. Use protetor solar, chapéu e óculos com proteção UV. Reaplique o protetor conforme as instruções do produto.",
+      "referencias": [
+        "OMS_UV",
+        "PREV"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "MT01",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Tempestade na previsão horária",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "tempestade_prevista"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "tempestade_prevista",
+            "operador": "==",
+            "valor": true,
+            "unidade": "booleano"
+          }
+        ]
+      },
+      "nivel": "critico",
+      "mensagem": "Tempestade na previsão horária.",
+      "conselho": "Adie a caminhada. Se ouvir trovão, procure uma edificação fechada ou um veículo fechado com teto metálico. Evite árvores isoladas e saliências rochosas. Aguarde pelo menos 30 minutos após o último trovão antes de voltar à área aberta.",
+      "referencias": [
+        "PREV",
+        "NWS_RAIOS"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "MT02",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Granizo associado a tempestade",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "granizo_previsto"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "granizo_previsto",
+            "operador": "==",
+            "valor": true,
+            "unidade": "booleano"
+          }
+        ]
+      },
+      "nivel": "critico",
+      "mensagem": "Granizo associado a tempestade.",
+      "conselho": "Adie a caminhada. Se ouvir trovão, procure uma edificação fechada ou um veículo fechado com teto metálico. Evite árvores isoladas e saliências rochosas. Aguarde pelo menos 30 minutos após o último trovão antes de voltar à área aberta.",
+      "referencias": [
+        "PREV",
+        "NWS_RAIOS"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "MT03",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Tempestade durante a passagem por trecho exposto",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "tempestade_prevista",
+        "atributos_trecho"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "tempestade_prevista",
+            "operador": "==",
+            "valor": true,
+            "unidade": "booleano"
+          },
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "crista_exposta",
+              "cume_exposto",
+              "laje_exposta"
+            ],
+            "unidade": "lista"
+          }
+        ]
+      },
+      "nivel": "critico",
+      "mensagem": "Tempestade durante a passagem por trecho exposto.",
+      "conselho": "Adie a caminhada. Se ouvir trovão, procure uma edificação fechada ou um veículo fechado com teto metálico. Evite árvores isoladas e saliências rochosas. Aguarde pelo menos 30 minutos após o último trovão antes de voltar à área aberta.",
+      "referencias": [
+        "PREV",
+        "NWS_RAIOS"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "VE05",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Rajada muito forte na caminhada",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "rajada_max"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "rajada_max",
+            "operador": ">=",
+            "valor": 70,
+            "unidade": "km/h"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Rajada muito forte na caminhada.",
+      "conselho": "Adie a saída ou escolha outro percurso. Confira os avisos oficiais de vento.",
+      "referencias": [
+        "PREV",
+        "AVISO"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "VE06",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Rajada muito forte em terreno exposto",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "rajada_trecho",
+        "atributos_trecho"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "rajada_trecho",
+            "operador": ">=",
+            "valor": 70,
+            "unidade": "km/h"
+          },
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "crista_exposta",
+              "cume_exposto",
+              "laje_exposta"
+            ],
+            "unidade": "lista"
+          }
+        ]
+      },
+      "nivel": "critico",
+      "mensagem": "Rajada muito forte em terreno exposto.",
+      "conselho": "Adie a passagem pelo trecho exposto enquanto persistir a previsão de rajadas fortes.",
+      "referencias": [
+        "PREV",
+        "AVISO"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "VE07",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Visibilidade muito limitada",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "visibilidade_min"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "visibilidade_min",
+            "operador": "<=",
+            "valor": 100,
+            "unidade": "m"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Visibilidade muito limitada.",
+      "conselho": "Considere adiar ou escolher um percurso conhecido e sinalizado. Se perder a referência do caminho, interrompa o avanço e reavalie a navegação.",
+      "referencias": [
+        "PREV"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "OP03",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Saída antes do nascer do sol",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "saida_antes_do_nascer"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "saida_antes_do_nascer",
+            "operador": "==",
+            "valor": true,
+            "unidade": "booleano"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "Saída antes do nascer do sol.",
+      "conselho": "Prefira sair após o nascer do sol. Se a saída no escuro for planejada, leve lanterna de cabeça e bateria reserva.",
+      "referencias": [
+        "PREV",
+        "PLANO"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "OP04",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Saída ao pôr do sol ou depois",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "saida_apos_por_do_sol"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "saida_apos_por_do_sol",
+            "operador": "==",
+            "valor": true,
+            "unidade": "booleano"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Saída ao pôr do sol ou depois.",
+      "conselho": "Prefira reagendar para um horário diurno. Em uma saída noturna planejada, leve lanterna de cabeça e bateria reserva.",
+      "referencias": [
+        "PREV",
+        "PLANO"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "OP05",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Margem de luz reduzida no retorno",
+      "escopo": "caminhada",
+      "entradas_exigidas": [
+        "margem_luz_min"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "margem_luz_min",
+            "operador": ">=",
+            "valor": 0,
+            "unidade": "min"
+          },
+          {
+            "fato": "margem_luz_min",
+            "operador": "<=",
+            "valor": 30,
+            "unidade": "min"
+          }
+        ]
+      },
+      "nivel": "atencao",
+      "mensagem": "Margem de luz reduzida no retorno.",
+      "conselho": "Antecipe a saída para incluir margem de retorno antes do pôr do sol. Leve uma lanterna.",
+      "referencias": [
+        "PREV",
+        "PLANO"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    },
+    {
+      "id": "TR09",
+      "versao": "1.0",
+      "estado_revisao": "revisada_para_piloto",
+      "fenomeno": "Chuva intensa a montante de travessia",
+      "escopo": "trecho",
+      "entradas_exigidas": [
+        "atributos_trecho",
+        "pico_montante"
+      ],
+      "condicao": {
+        "todas": [
+          {
+            "fato": "atributos_trecho",
+            "operador": "intersecta",
+            "valor": [
+              "travessia_curso_dagua",
+              "travessia_com_imersao",
+              "area_de_cachoeira"
+            ],
+            "unidade": "lista"
+          },
+          {
+            "fato": "pico_montante",
+            "operador": ">=",
+            "valor": 25,
+            "unidade": "mm por hora amostrada"
+          }
+        ]
+      },
+      "nivel": "atencao_alta",
+      "mensagem": "Chuva intensa a montante de travessia.",
+      "conselho": "Prefira um percurso sem essa travessia. Se houver correnteza forte ou subida rápida da água, não atravesse e afaste-se do leito.",
+      "referencias": [
+        "CBM_CHEIA",
+        "PREV"
+      ],
+      "justificativa": "Critério experimental de apoio ao planejamento da caminhada.",
+      "indisponibilidade": "Dados ausentes deixam a regra não avaliável quando nenhuma condição conhecida é falsa.",
+      "disponibilidade": "dados_atuais_ou_evidencia_piloto"
+    }
+  ],
+  "casos_de_teste": [
+    {
+      "regra": "CH01",
+      "fatos": {
+        "pico_caminhada": 5
+      },
+      "esperado": "acionada"
+    },
+    {
+      "regra": "CH01",
+      "fatos": {
+        "pico_caminhada": 4.99
+      },
+      "esperado": "criterio_nao_atingido"
+    },
+    {
+      "regra": "TR01",
+      "fatos": {
+        "atributos_trecho": [
+          "escadaria"
+        ],
+        "pico_trecho": 8
+      },
+      "esperado": "acionada"
+    },
+    {
+      "regra": "TR01",
+      "fatos": {
+        "atributos_trecho": [
+          "escadaria"
+        ],
+        "pico_trecho": 0
+      },
+      "esperado": "criterio_nao_atingido"
+    },
+    {
+      "regra": "TR01",
+      "fatos": {
+        "atributos_trecho": [
+          "escadaria"
+        ],
+        "pico_trecho": null
+      },
+      "esperado": "nao_avaliavel"
+    },
+    {
+      "regra": "TR01",
+      "fatos": {
+        "atributos_trecho": [],
+        "pico_trecho": null
+      },
+      "esperado": "criterio_nao_atingido"
+    },
+    {
+      "regra": "CH04",
+      "fatos": {
+        "chuva_24h_prevista": null
+      },
+      "esperado": "nao_avaliavel"
+    },
+    {
+      "regra": "CH05",
+      "fatos": {
+        "chuva_24h_observada": 25,
+        "idade_observacao_na_saida": 7
+      },
+      "esperado": "criterio_nao_atingido"
+    },
+    {
+      "regra": "TR06",
+      "fatos": {
+        "atributos_trecho": [
+          "travessia_curso_dagua"
+        ],
+        "pico_montante": null
+      },
+      "esperado": "nao_avaliavel"
+    },
+    {
+      "regra": "AT02",
+      "fatos": {
+        "nivel_tempestade_oficial": "perigo"
+      },
+      "esperado": "acionada"
+    },
+    {
+      "regra": "AT02",
+      "fatos": {
+        "nivel_tempestade_oficial": null
+      },
+      "esperado": "nao_avaliavel"
+    },
+    {
+      "regra": "TE01",
+      "fatos": {
+        "queda_2h": 6
+      },
+      "esperado": "acionada"
+    },
+    {
+      "regra": "VE01",
+      "fatos": {
+        "atributos_trecho": [
+          "cume_exposto"
+        ],
+        "rajada_trecho": 50
+      },
+      "esperado": "acionada"
+    },
+    {
+      "regra": "OP01",
+      "fatos": {
+        "interdicao_confirmada": true
+      },
+      "esperado": "acionada"
+    },
+    {
+      "regra": "DQ01",
+      "fatos": {
+        "cobertura_caminhada": 99.9
+      },
+      "esperado": "acionada"
+    },
+    {
+      "regra": "DQ02",
+      "fatos": {
+        "cobertura_caminhada": 0
+      },
+      "esperado": "acionada"
+    },
+    {
+      "regra": "CH02",
+      "fatos": {
+        "pico_caminhada": 24.99
+      },
+      "esperado": "criterio_nao_atingido"
+    },
+    {
+      "regra": "CH02",
+      "fatos": {
+        "pico_caminhada": 25
+      },
+      "esperado": "acionada"
+    }
+  ],
+  "cenario_experimental": {
+    "trilha": "RIO-PNT-001",
+    "trecho": "Acesso final ao cume pela escadaria, na subida",
+    "trecho_pct": [
+      52.0024,
+      52.6186
+    ],
+    "duracao_min": 120,
+    "saidas_hora_local": [
+      "08:00",
+      "09:00"
+    ],
+    "pico_simulado": {
+      "inicio": "09:00",
+      "fim": "10:00",
+      "mm": 8
+    },
+    "demais_horas_mm": 0,
+    "esperado": {
+      "TR01_em_ambas_caminhadas_inteiras": "acionada",
+      "TR01_08h_por_trecho": "acionada",
+      "TR01_09h_por_trecho": "criterio_nao_atingido"
+    }
+  }
+}

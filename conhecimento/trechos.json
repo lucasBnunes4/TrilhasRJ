@@ -1,0 +1,22 @@
+{
+  "RIO-PNT-001": [
+    {
+      "id": "escadaria",
+      "nome": "Escadaria do Pico da Tijuca",
+      "limites_pct": [52.0024, 52.6186],
+      "atributos": ["escadaria"],
+      "fonte": "documentacao/trecho-piloto-pico-da-tijuca.md",
+      "estado": "documentado"
+    }
+  ],
+  "PAR-OUT-001": [
+    {
+      "id": "ponte-pedra-branca",
+      "nome": "Ponte sobre o Rio da Pedra Branca",
+      "limites_pct": [50.3133, 50.6321],
+      "atributos": ["travessia_curso_dagua"],
+      "fonte": "PAR-OUT-001-F01-P11",
+      "estado": "hipotese_por_altitude"
+    }
+  ]
+}
