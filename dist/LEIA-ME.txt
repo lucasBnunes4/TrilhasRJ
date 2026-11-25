@@ -1,0 +1,6 @@
+﻿TRILHAS RJ
+Extraia todos os arquivos do ZIP e clique duas vezes em TrilhasRJ.exe.
+Mantenha a janela do aplicativo aberta. A interface abre no navegador.
+Se o navegador nÃ£o abrir, digite o endereÃ§o mostrado na janela.
+Use internet para consultar os dados meteorolÃ³gicos.
+Feche a janela do aplicativo para encerrar.
